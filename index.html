@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hugo Virot | Développeur Web</title>
+    <!-- lien CSS de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/6259f9b52f.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <header>
+
+        <nav class="navbar navbar-dark fixed-top navbar-expand-lg blueBackground d-md-flex flex-column">
+            <img src="./images/photo_profil.jpeg" alt="photo de profil" id="photoProfil">
+            <p class="fs-3 mb-0">Hugo Virot, Développeur Web
+            </p>
+            <a class="navbar-brand" href="#"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end blueBackground" tabindex="-1" id="offcanvasDarkNavbar"
+                aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav d-flex align-items-center">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">accueil</a>
+                        </li>
+                        <span class="d-none d-md-block">|</span>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#parcours">parcours</a>
+                        </li>
+                        <span class="d-none d-md-block">|</span>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#competences">compétences</a>
+                        </li>
+                        <span class="d-none d-md-block">|</span>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projets">projets</a>
+                        </li>
+                        <span class="d-none d-md-block">|</span>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- grande image + h1-->
+        <section class="container-fluid" id="hero">
+            <div id="heroTexts" class="m-0 m-md-5 me-auto ps-2 ps-md-5 text-start">
+                <p class="fs-2" id="passion">Ma passion : </p>
+                <h1>Réinventer <span class="blueBackground p-2">le web <i class="fa-solid fa-terminal"></i></span> </h1>
+                <div class="row mt-3">
+                    <div class="col-sm-6 mb-3 mb-sm-0 col-md-4 me-lg-5">
+                        <a href="./CV Hugo VIROT.png"><button class="btn">CV</button></a>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <a href="#parcours"><button class="btn">Parcours</button></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- texte avec fond bleu -->
+        <section class="container-fluid blueBackground p-5" id="passions">
+            <div class="row">
+                <div class="text-left col-md-8 col-lg-6 offset-md-2 offset-lg-3 fst-italic fs-5">
+                    <p><i class="fa-solid fa-3x fa-quote-left"></i>Réinventer le web.</p>
+                    <p>Améliorer sans cesse l'expérience utilisateur.</p>
+                    <p>Ecrire un code simple, performant et maintenable.</p>
+                    <p>Voici les passions qui m'animent.<i class="fa-solid fa-3x fa-quote-right"></i></p>
+                </div>
+            </div>
+
+            <div class="row mt-5 text-center" id="numbers">
+
+                <div class="col-md-4">
+                    <div class="number m-2" id="value1"></div>
+                    <p>ans d'expérience</p>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="number m-2" id="value2"></div>
+                    <p>niveau BAC +</p>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="number m-2" id="value3"></div>
+                    <p>technologies maîtrisées</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- parcours-->
+        <section class="container py-5 text-center" id="parcours">
+            <h2 class="blueText my-5">
+                < parcours />
+            </h2>
+
+            <div class="row my-5 d-flex align-items-center">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <img src="./images/logo_arinfo.png" alt="logo arinfo">
+                </div>
+                <div class="col-md-6">
+                    <div class="blueBackground rounded-pill p-4 fs-5">
+                        <p class="dates">depuis fin 2020</p>
+                        <p>FORMATEUR EN DÉVELOPPEMENT WEB ET CDA chez Arinfo (Niort)</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row my-5 d-flex align-items-center">
+                <div class="col-md-6">
+                    <div class="blueBackground rounded-pill p-4 fs-5">
+                        <p class="dates">2022-2023</p>
+                        <p>TITRE PRO CONCEPTEUR DÉVELOPPEUR D'APPLICATIONS (candidat libre)</p>
+                    </div>
+                </div>
+                <div class="col-md-6 order-first order-md-last mb-4 mb-md-0">
+                    <img src="./images/rncp.png" alt="badge rncp" class="w-25">
+                </div>
+            </div>
+
+            <div class="row my-5 d-flex align-items-center mb-4 mb-md-0">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <img src="./images/Logo_enedis.png" alt="logo Enedis" class="w-50">
+                </div>
+                <div class="col-md-6">
+                    <div class="blueBackground rounded-pill p-4 fs-5">
+                        <p class="dates">2019 - 2020</p>
+                        <p>DÉVELOPPEUR WEB EN ALTERNANCE CHEZ ENEDIS : application interne de traitement de données,
+                            déploiement national</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row my-5 d-flex align-items-center">
+                <div class="col-md-6">
+                    <div class="blueBackground rounded-pill p-4 fs-5">
+                        <p class="dates">2019-2020</p>
+                        <p>TITRE PRO DÉVELOPPEUR WEB (BAC+2)</p>
+                    </div>
+                </div>
+                <div class="col-md-6 order-first order-md-last mb-4 mb-md-0">
+                    <img src="./images/logo_campus.png">
+                </div>
+            </div>
+
+        </section>
+
+        <!-- compétences-->
+        <section class="container-fluid p-5 blueBackground text-center" id="competences">
+            <h2>
+                < compétences />
+            </h2>
+
+            <p class="fs-5 my-5"><i class="fa-solid fa-2x fa-quote-left me-2"></i>
+                J'ai un profil full-stack : je suis polyvalent et j'aime ça !
+                <i class="fa-solid fa-2x fa-quote-right ms-2"></i>
+            </p>
+
+            <div class="row">
+                <div class="col-md-4 mt-5 mt-md-0">
+                    <i class="fa-solid fa-5x fa-code"></i>
+                    <h3 class="my-3">front-end</h3>
+                    <p>sites vitrines HTML/CSS, applis web JavaScript (Vue / React), applis mobile (React Native)</p>
+                </div>
+                <div class="col-md-4 mt-5 mt-md-0">
+                    <i class="fa-solid fa-5x fa-database"></i>
+                    <h3 class="my-3">back-end</h3>
+                    <p>sites dynamiques et API PHP/Laravel avec base de données MySQL</p>
+                </div>
+                <div class="col-md-4 mt-5 mt-md-0">
+                    <i class="fa-solid fa-5x fa-list-check"></i>
+                    <h3 class="my-3">Gestion de projet</h3>
+                    <p>Méthode Agile (Scrum, Kanban, Prince2), cahier des charges et dossiers de conception, diagramme
+                        de Gantt</p>
+                </div>
+                <div class="col-md-4 mt-5">
+                    <i class="fa-solid fa-5x fa-pencil"></i>
+                    <h3 class="my-3">design</h3>
+                    <p>Maquettage / charte graphique / UI - UX (interface / expérience utilisateur)</p>
+                </div>
+                <div class="col-md-4 mt-5">
+                    <i class="fa-solid fa-5x fa-graduation-cap"></i>
+                    <h3 class="my-3">transmission de connaissances</h3>
+                    <p>37 élèves formés, du BAC+2 au BAC+4 (92% de réussite)</p>
+                </div>
+                <div class="col-md-4 mt-5">
+                    <i class="fa-solid fa-5x fa-flag-usa"></i>
+                    <h3 class="my-3">Maîtrise de l'anglais</h3>
+                    <p>Niveau avancé (compréhension et expression écrites et orales)</p>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- projets-->
+        <section class="container-fluid p-5 d-flex align-items-center justify-content-center" id="projets">
+            <h2>
+                < projets />
+            </h2>
+        </section>
+
+        <section class="container-fluid bg-white p-5" id="aperçusProjets">
+
+            <div class="row">
+
+                <div class="col-md-6 col-lg-4 text-center">
+                    <a href="https://www.sportetfoivalence.fr"><img src="./images/sportetfoi.PNG"></a>
+                    <p>Sport et Foi Valence (association)</p>
+                </div>
+
+                <div class="col-md-6 col-lg-4 text-center">
+                    <a href="#accueil"><img src="./images/portfolio.PNG"></a>
+                    <p>portfolio 2024</p>
+                </div>
+
+                <div class="col-md-6 col-lg-4 text-center">
+                    <a href="#projets"><img src="./images/piloter.PNG"></a>
+                    <p>Pilot'ER (application Enedis)</p>
+                </div>
+
+                <div class="col-md-6 col-lg-4 text-center">
+                    <a href="https://www.madagascarts-boutique.com"><img src="./images/madagascartsboutique.PNG"></a>
+                    <p>Madagasc'arts Boutique (site vitrine)</p>
+                </div>
+
+                <div class="col-md-6 col-lg-4 text-center">
+                    <a href="https://www.nice-places.fr"><img src="./images/niceplaces.PNG"></a>
+                    <p>Nice Places (partage de sorties nature)</p>
+                </div>
+
+                <div class="col-md-6 col-lg-4 text-center">
+                    <a href="#projets"><img src="./images/laravelonlinestore.PNG"></a>
+                    <p>Laravel Online Store (boutique de démo Laravel)</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- technos grande image-->
+        <section class="container-fluid p-5 blueBackground" id="technos">
+            <h2 class="blueText">
+                < technologies />
+            </h2>
+        </section>
+
+
+        <!-- technos logos-->
+        <section class="container-fluid p-5 bg-white" id="logosTechnos">
+            <div class="d-flex justify-content-around flex-wrap blueText">
+                <i class="fa-brands fa-5x fa-html5"></i>
+                <i class="fa-brands fa-5x  fa-css3-alt"></i>
+                <i class="fa-brands fa-5x fa-sass"></i>
+                <i class="fa-brands fa-5x  fa-square-js"></i>
+                <i class="fa-brands fa-5x  fa-vuejs"></i>
+                <i class="fa-brands fa-5x  fa-react"></i>
+                <i class="fa-brands fa-5x  fa-bootstrap"></i>
+                <i class="fa-brands fa-5x  fa-php"></i>
+                <i class="fa-brands fa-5x  fa-laravel"></i>
+                <i class="fa-brands fa-5x  fa-wordpress"></i>
+                <i class="fa-brands fa-5x  fa-java"></i>
+                <i class="fa-brands fa-5x  fa-docker"></i>
+                <i class="fa-brands fa-5x fa-square-git"></i>
+                <i class="fa-brands fa-5x fa-github"></i>
+            </div>
+        </section>
+
+
+        <!-- contact -->
+        <section class="container-fluid p-5 d-flex flex-column vh-100" id="contact">
+
+            <h2 class="blueText">
+                < contact />
+            </h2>
+
+            <div class="row d-flex" id="textesContactRow">
+                <div class="blueText text-left ps-5 py-5 col-sm-9 offset-sm-3 col-md-6 offset-md-6 col-lg-5 offset-lg-7 col-xl-4 offset-xl-8 text-white"
+                    id="textesContact">
+                    <p><i class="fa-solid fa-2x fa-phone me-4"></i>06 30 47 86 13</p>
+                    <p><a href="mailto:hugo.virot@gmail.com"><i
+                                class="fa-solid fa-2x fa-at me-4"></i></a>hugo.virot@gmail.com</p>
+                    <p><a href="https://linkedin.com/in/hugovirot"><i
+                                class="fa-brands fa-2x fa-linkedin me-4"></i></a>linkedin.com/in/hugovirot</p>
+                    <p><i class="fa-brands fa-2x fa-github me-4"></i>github.com/HugoVirot</p>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="container-fluid blueBackground text-center p-5">
+        <p class="fs-2">Hugo Virot, Développeur Web</p>
+        <i class="fa-3x my-2 fa-solid fa-terminal"></i>
+        <div class="row mt-5">
+            <ul class="col-md-8 offset-md-2 d-flex flex-column flex-md-row justify-content-evenly align-items-center">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#">accueil</a>
+                </li>
+                <span class="d-none d-md-block">|</span>
+                <li class="nav-item">
+                    <a class="nav-link" href="#parcours">parcours</a>
+                </li>
+                <span class="d-none d-md-block">|</span>
+                <li class="nav-item">
+                    <a class="nav-link" href="#competences">compétences</a>
+                </li>
+                <span class="d-none d-md-block">|</span>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projets">projets</a>
+                </li>
+                <span class="d-none d-md-block">|</span>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">contact</a>
+                </li>
+            </ul>
+        </div>
+        <p class="mt-5" id="copyright">© copyright 2023-2024 hugovirot.fr</p>
+    </footer>
+    <!-- lien JS de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <script>
+        function animateValue(obj, start, end, duration) {
+            let startTimestamp = null;
+            const step = (timestamp) => {
+                if (!startTimestamp) startTimestamp = timestamp;
+                const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+                obj.innerHTML = Math.floor(progress * (end - start) + start);
+                if (progress < 1) {
+                    window.requestAnimationFrame(step);
+                }
+            };
+            window.requestAnimationFrame(step);
+        }
+
+        window.onscroll = function () {
+            if (window.scrollY > 700) {
+                const anneesExp = document.getElementById("value1");
+                animateValue(anneesExp, 0, 5, 1500);
+
+                const anneeEtudes = document.getElementById("value2");
+                animateValue(anneeEtudes, 0, 4, 1500);
+
+                const technos = document.getElementById("value3");
+                animateValue(technos, 0, 14, 1500);
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>
