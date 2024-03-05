@@ -11,6 +11,21 @@ body {
   color: white;
   overflow-x: hidden;
   width: 100vw;
+  scroll-behavior: smooth;
+  /* Ensemble, ces styles permettent aux éléments d'être rendus
+    transparents et de devenir progressivement plus opaques en 1 seconde
+    lorsque la classe 'is-visible' est ajoutée. Cela crée un effet
+    d'animation pour les éléments. */
+}
+body .animate-on-scroll {
+  /* Définit une opacité initiale de 0 pour les éléments */
+  opacity: 0;
+  /* Définit une transition d'opacité d'une seconde */
+  transition: opacity 1.3s;
+}
+body .animate-on-scroll.is-visible {
+  /* Définit une opacité de 1 pour les éléments avec la classe 'is-visible' */
+  opacity: 1;
 }
 body nav p,
 body h1,
@@ -95,6 +110,11 @@ body main #hero #heroTexts {
   position: relative;
   top: 40%;
   width: 35%;
+  transition: 1.5s;
+}
+body main #hero #heroTexts:hover {
+  transform: translateX(30%);
+  transition: 1.5s;
 }
 @media screen and (max-width: 768px) {
   body main #hero #heroTexts {
@@ -130,24 +150,32 @@ body main #parcours img {
   transition: 1s;
 }
 body main #parcours img:hover {
-  transform: scale(1.5);
-  transition: 1s;
+  transform: rotate(1turn);
+  transition: 0.5s;
 }
 @media screen and (max-width: 767px) {
   body main #parcours img {
     width: 80vw;
   }
 }
+body main #parcours .rounded-pill {
+  transition: 1s;
+}
+body main #parcours .rounded-pill:hover {
+  transform: scale(1.2);
+  background-color: darkgoldenrod;
+  transition: 1s;
+}
 body main #parcours .dates {
   letter-spacing: 5px;
 }
 body main #competences i {
   transform: scale(1) !important;
-  transition: 1s;
+  transition: 0.7s;
 }
 body main #competences i:hover {
   transform: scale(1.5) !important;
-  transition: 1s;
+  transition: 0.7s;
   color: darkgoldenrod;
 }
 body main #projets {
@@ -183,11 +211,11 @@ body main #technos {
 }
 body main #logosTechnos i {
   transform: scale(1) !important;
-  transition: 1s;
+  transition: 0.7s;
 }
 body main #logosTechnos i:hover {
   transform: scale(1.5) !important;
-  transition: 1s;
+  transition: 0.7s;
   color: darkgoldenrod;
 }
 body main #contact {
