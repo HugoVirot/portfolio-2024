@@ -51,16 +51,20 @@ body {
     color: inherit;
   }
 
+  .btn {
+    background-color: $mainColor !important;
+    color: white !important;
+    font-weight: bolder !important;
+    width: 10em;
+    font-size: 1.5em;
+  }
+
   .blueBackground {
     background-color: $mainColor;
   }
 
   .blueText {
     color: $mainColor;
-  }
-
-  .btn {
-    font-size: 1.5em;
   }
 
   a:hover,
@@ -90,12 +94,6 @@ body {
     }
   }
 
-  main button {
-    background-color: $mainColor !important;
-    color: white !important;
-    font-weight: bolder !important;
-  }
-
   header {
     nav {
       #photoProfil {
@@ -121,31 +119,31 @@ body {
 
       #heroTexts {
         position: relative;
-        top: 40%;
+        top: 50%;
         width: 35%;
         transition: 1.5s;
 
-        &:hover {
-          transform: translateX(30%);
+        h1 {
+          transition: 1.5s;
+        }
+
+        h1:hover {
+          transform: translate(50%, -50%);
           transition: 1.5s;
         }
 
         @media screen and (max-width: 768px) {
-          top: 30%;
+          top: 55%;
         }
 
-        button {
-          width: 10em;
+        @media screen and (max-width: 1600px) {
+          width: 100%;
+          left: 0%;
         }
-      }
 
-      @media screen and (max-width: 1600px) {
-        width: 100%;
-        left: 0%;
-      }
-
-      @media screen and (min-width: 1201px) and (max-width: 1599px) {
-        width: 50%;
+        @media screen and (min-width: 1201px) and (max-width: 1599px) {
+          width: 50%;
+        }
       }
     }
 
@@ -187,7 +185,7 @@ body {
         transition: 1s;
 
         &:hover {
-          transform: scale(1.2);
+          transform: scale(1.1);
           background-color: $secondColor;
           transition: 1s;
         }
@@ -224,12 +222,39 @@ body {
         transition: 0.4s;
         z-index: 0;
         filter: none;
+        border: 3px solid $secondColor;
+        border-radius: 10px;
+
         &:hover {
-          transform: scale(1.2);
+          transform: scale(1.1);
           transition: 0.6s;
-          z-index: 1;
-          filter: contrast(130%);
+          z-index: 10;
         }
+      }
+
+      h1 {
+        justify-content: center !important;
+        font-size: 3em;
+
+        @media screen and (max-width: 767px) {
+          font-size: 1.5em;
+        }
+      }
+
+      .mysql1 {
+        @include icon;
+
+        width: 5em;
+        color: $mainColor;
+        border: none;
+
+        &:hover {
+          transform: none !important;
+        }
+      }
+
+      ul {
+        list-style: square;
       }
     }
 
@@ -242,26 +267,42 @@ body {
       border: 5vw solid $mainColor;
     }
 
-    #logosTechnos i {
-      @include icon;
-    }
+    #logosTechnos {
+      i,
+      #mysql
+       {
+        @include icon;
+      }
 
+      #mysql {
+        width: 5em;
+        color: $mainColor;
+      }
+    }
     /* contact */
 
     #contact {
-      background-image: url(./images/photoprofil.jpeg);
+      background-image: url(./images/photo_large.jpeg);
       background-position: center;
       background-size: cover;
       height: 100vh;
-    }
 
-    #textesContactRow {
-      margin: auto 0;
-    }
+      i {
+        @include icon;
+      }
 
-    #textesContact {
-      background-color: rgba(13, 24, 115, 0.5);
-      font-size: 20px;
+      a:hover {
+        background-color: #72739a !important;
+      }
+
+      #textesContactRow {
+        margin: auto 0;
+      }
+
+      #textesContact {
+        background-color: rgba(13, 24, 115, 0.5);
+        font-size: 20px;
+      }
     }
   }
 }

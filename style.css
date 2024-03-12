@@ -42,14 +42,18 @@ body a {
   text-decoration: none;
   color: inherit;
 }
+body .btn {
+  background-color: #061681 !important;
+  color: white !important;
+  font-weight: bolder !important;
+  width: 10em;
+  font-size: 1.5em;
+}
 body .blueBackground {
   background-color: #061681;
 }
 body .blueText {
   color: #061681;
-}
-body .btn {
-  font-size: 1.5em;
 }
 body a:hover,
 body .btn:hover {
@@ -75,11 +79,6 @@ body h1 h2 {
   body h1 h2 {
     font-size: 1.8rem;
   }
-}
-body main button {
-  background-color: #061681 !important;
-  color: white !important;
-  font-weight: bolder !important;
 }
 body header nav #photoProfil {
   width: 6vw;
@@ -108,30 +107,30 @@ body main #hero {
 }
 body main #hero #heroTexts {
   position: relative;
-  top: 40%;
+  top: 50%;
   width: 35%;
   transition: 1.5s;
 }
-body main #hero #heroTexts:hover {
-  transform: translateX(30%);
+body main #hero #heroTexts h1 {
+  transition: 1.5s;
+}
+body main #hero #heroTexts h1:hover {
+  transform: translate(50%, -50%);
   transition: 1.5s;
 }
 @media screen and (max-width: 768px) {
   body main #hero #heroTexts {
-    top: 30%;
+    top: 55%;
   }
 }
-body main #hero #heroTexts button {
-  width: 10em;
-}
 @media screen and (max-width: 1600px) {
-  body main #hero {
+  body main #hero #heroTexts {
     width: 100%;
     left: 0%;
   }
 }
 @media screen and (min-width: 1201px) and (max-width: 1599px) {
-  body main #hero {
+  body main #hero #heroTexts {
     width: 50%;
   }
 }
@@ -162,7 +161,7 @@ body main #parcours .rounded-pill {
   transition: 1s;
 }
 body main #parcours .rounded-pill:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
   background-color: darkgoldenrod;
   transition: 1s;
 }
@@ -195,12 +194,40 @@ body main #aperçusProjets img {
   transition: 0.4s;
   z-index: 0;
   filter: none;
+  border: 3px solid darkgoldenrod;
+  border-radius: 10px;
 }
 body main #aperçusProjets img:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
   transition: 0.6s;
-  z-index: 1;
-  filter: contrast(130%);
+  z-index: 10;
+}
+body main #aperçusProjets h1 {
+  justify-content: center !important;
+  font-size: 3em;
+}
+@media screen and (max-width: 767px) {
+  body main #aperçusProjets h1 {
+    font-size: 1.5em;
+  }
+}
+body main #aperçusProjets .mysql1 {
+  transform: scale(1) !important;
+  transition: 0.7s;
+  width: 5em;
+  color: #061681;
+  border: none;
+}
+body main #aperçusProjets .mysql1:hover {
+  transform: scale(1.5) !important;
+  transition: 0.7s;
+  color: darkgoldenrod;
+}
+body main #aperçusProjets .mysql1:hover {
+  transform: none !important;
+}
+body main #aperçusProjets ul {
+  list-style: square;
 }
 body main #technos {
   background-image: url(./images/workspace.jpg);
@@ -209,25 +236,43 @@ body main #technos {
   height: 100vh;
   border: 5vw solid #061681;
 }
-body main #logosTechnos i {
+body main #logosTechnos i,
+body main #logosTechnos #mysql {
   transform: scale(1) !important;
   transition: 0.7s;
 }
-body main #logosTechnos i:hover {
+body main #logosTechnos i:hover,
+body main #logosTechnos #mysql:hover {
   transform: scale(1.5) !important;
   transition: 0.7s;
   color: darkgoldenrod;
 }
+body main #logosTechnos #mysql {
+  width: 5em;
+  color: #061681;
+}
 body main #contact {
-  background-image: url(./images/photoprofil.jpeg);
+  background-image: url(./images/photo_large.jpeg);
   background-position: center;
   background-size: cover;
   height: 100vh;
 }
-body main #textesContactRow {
+body main #contact i {
+  transform: scale(1) !important;
+  transition: 0.7s;
+}
+body main #contact i:hover {
+  transform: scale(1.5) !important;
+  transition: 0.7s;
+  color: darkgoldenrod;
+}
+body main #contact a:hover {
+  background-color: #72739a !important;
+}
+body main #contact #textesContactRow {
   margin: auto 0;
 }
-body main #textesContact {
+body main #contact #textesContact {
   background-color: rgba(13, 24, 115, 0.5);
   font-size: 20px;
 }/*# sourceMappingURL=style.css.map */
