@@ -211,19 +211,19 @@ body main #aperçusProjets h1 {
     font-size: 1.5em;
   }
 }
-body main #aperçusProjets .mysql1 {
+body main #aperçusProjets .mysql {
   transform: scale(1) !important;
   transition: 0.7s;
   width: 5em;
   color: #061681;
   border: none;
 }
-body main #aperçusProjets .mysql1:hover {
+body main #aperçusProjets .mysql:hover {
   transform: scale(1.5) !important;
   transition: 0.7s;
   color: darkgoldenrod;
 }
-body main #aperçusProjets .mysql1:hover {
+body main #aperçusProjets .mysql:hover {
   transform: none !important;
 }
 body main #aperçusProjets ul {
