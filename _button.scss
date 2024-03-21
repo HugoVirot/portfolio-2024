@@ -1,0 +1,12 @@
+@mixin button {
+  background-color: $mainColor !important;
+  color: white !important;
+  font-weight: bolder !important;
+  width: 10em;
+  font-size: 1.5em;
+
+  &:hover {
+    background-color: $secondColor !important;
+    transition: 0.7s;
+  }
+}

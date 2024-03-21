@@ -42,6 +42,7 @@ body a {
   text-decoration: none;
   color: inherit;
 }
+body main a :not(.contactLink),
 body .btn {
   background-color: #061681 !important;
   color: white !important;
@@ -49,27 +50,30 @@ body .btn {
   width: 10em;
   font-size: 1.5em;
 }
-body .blueBackground {
+body main a :not(.contactLink):hover,
+body .btn:hover {
+  background-color: darkgoldenrod !important;
+  transition: 0.7s;
+}
+body .blueBackground,
+body .carousel-control-prev-icon,
+body .carousel-control-next-icon,
+body .carousel-indicators {
   background-color: #061681;
 }
 body .blueText {
   color: #061681;
 }
-body a:hover,
-body .btn:hover {
-  background-color: darkgoldenrod !important;
-  transition: 0.7s;
-}
 body ul {
   list-style: none;
 }
 body h1 {
-  font-size: 6rem;
+  font-size: 4.8rem;
   line-height: 1.5em;
 }
 @media screen and (max-width: 1200px) {
   body h1 {
-    font-size: 3rem;
+    font-size: 2.8rem;
   }
 }
 body h1 h2 {
@@ -107,7 +111,7 @@ body main #hero {
 }
 body main #hero #heroTexts {
   position: relative;
-  top: 50%;
+  top: 45%;
   width: 35%;
   transition: 1.5s;
 }
@@ -120,7 +124,7 @@ body main #hero #heroTexts h1:hover {
 }
 @media screen and (max-width: 768px) {
   body main #hero #heroTexts {
-    top: 55%;
+    top: 50%;
   }
 }
 @media screen and (max-width: 1600px) {
@@ -149,8 +153,8 @@ body main #parcours img {
   transition: 1s;
 }
 body main #parcours img:hover {
-  transform: rotate(1turn);
-  transition: 0.5s;
+  transform: rotateY(360deg);
+  transition: 1s;
 }
 @media screen and (max-width: 767px) {
   body main #parcours img {
@@ -204,17 +208,41 @@ body main #aperçusProjets img:hover {
 }
 body main #aperçusProjets h1 {
   justify-content: center !important;
-  font-size: 3em;
+  font-size: 2.6em;
 }
 @media screen and (max-width: 767px) {
   body main #aperçusProjets h1 {
-    font-size: 1.5em;
+    font-size: 1.4em;
   }
+}
+@media screen and (max-width: 1200px) {
+  body main #aperçusProjets h2 {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  body main #aperçusProjets .carousel-indicators {
+    width: 50%;
+    margin: auto;
+  }
+}
+body main #aperçusProjets .modal-footer a,
+body main #aperçusProjets .modal-footer button {
+  background-color: darkgoldenrod !important;
+  color: white !important;
+  font-weight: bolder !important;
+  width: 10em;
+  font-size: 1.5em;
+}
+body main #aperçusProjets .modal-footer a:hover,
+body main #aperçusProjets .modal-footer button:hover {
+  background-color: #061681 !important;
+  transition: 0.7s;
 }
 body main #aperçusProjets .mysql {
   transform: scale(1) !important;
   transition: 0.7s;
-  width: 5em;
+  width: 3em;
   color: #061681;
   border: none;
 }
@@ -266,13 +294,10 @@ body main #contact i:hover {
   transition: 0.7s;
   color: darkgoldenrod;
 }
-body main #contact a:hover {
-  background-color: #72739a !important;
-}
 body main #contact #textesContactRow {
   margin: auto 0;
 }
 body main #contact #textesContact {
-  background-color: rgba(13, 24, 115, 0.5);
+  background-color: rgba(98, 102, 144, 0.5);
   font-size: 20px;
 }/*# sourceMappingURL=style.css.map */

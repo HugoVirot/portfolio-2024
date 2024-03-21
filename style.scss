@@ -1,5 +1,5 @@
 /* mixins */
-@import "icon";
+@import "icon", "button", "button2";
 
 /* polices */
 @import url("https://fonts.googleapis.com/css2?family=Anta&display=swap");
@@ -51,15 +51,15 @@ body {
     color: inherit;
   }
 
+  main a :not(.contactLink),
   .btn {
-    background-color: $mainColor !important;
-    color: white !important;
-    font-weight: bolder !important;
-    width: 10em;
-    font-size: 1.5em;
+    @include button;
   }
 
-  .blueBackground {
+  .blueBackground,
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon,
+  .carousel-indicators {
     background-color: $mainColor;
   }
 
@@ -67,22 +67,16 @@ body {
     color: $mainColor;
   }
 
-  a:hover,
-  .btn:hover {
-    background-color: $secondColor !important;
-    transition: 0.7s;
-  }
-
   ul {
     list-style: none;
   }
 
   h1 {
-    font-size: 6rem;
+    font-size: 4.8rem;
     line-height: 1.5em;
 
     @media screen and (max-width: 1200px) {
-      font-size: 3rem;
+      font-size: 2.8rem;
     }
 
     h2 {
@@ -119,7 +113,7 @@ body {
 
       #heroTexts {
         position: relative;
-        top: 50%;
+        top: 45%;
         width: 35%;
         transition: 1.5s;
 
@@ -133,7 +127,7 @@ body {
         }
 
         @media screen and (max-width: 768px) {
-          top: 55%;
+          top: 50%;
         }
 
         @media screen and (max-width: 1600px) {
@@ -172,8 +166,8 @@ body {
         transition: 1s;
 
         &:hover {
-          transform: rotate(1turn);
-          transition: 0.5s;
+          transform: rotateY(360deg);
+          transition: 1s;
         }
 
         @media screen and (max-width: 767px) {
@@ -234,17 +228,35 @@ body {
 
       h1 {
         justify-content: center !important;
-        font-size: 3em;
+        font-size: 2.6em;
 
         @media screen and (max-width: 767px) {
-          font-size: 1.5em;
+          font-size: 1.4em;
         }
+      }
+
+      h2 {
+        @media screen and (max-width: 1200px) {
+          font-size: 1.2rem;
+        }
+      }
+
+      .carousel-indicators {
+        @media screen and (min-width: 768px){
+          width: 50%;
+          margin: auto
+        }
+      }
+
+      .modal-footer a,
+      .modal-footer button {
+        @include button2;
       }
 
       .mysql {
         @include icon;
 
-        width: 5em;
+        width: 3em;
         color: $mainColor;
         border: none;
 
@@ -269,8 +281,7 @@ body {
 
     #logosTechnos {
       i,
-      #mysql
-       {
+      #mysql {
         @include icon;
       }
 
@@ -291,16 +302,13 @@ body {
         @include icon;
       }
 
-      a:hover {
-        background-color: #72739a !important;
-      }
-
       #textesContactRow {
         margin: auto 0;
       }
 
       #textesContact {
-        background-color: rgba(13, 24, 115, 0.5);
+        background-color: rgba(98, 102, 144, 0.5);
+        // background-color: rgba(13, 24, 115, 0.5);
         font-size: 20px;
       }
     }
