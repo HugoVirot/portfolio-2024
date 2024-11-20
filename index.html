@@ -1,1198 +1,1735 @@
 <!DOCTYPE html>
 <html lang="fr">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hugo Virot | Développeur Web</title>
     <!-- image de présentation -->
-    <meta property="og:image" content="./images/portfolio.PNG">
+    <meta property="og:image" content="./images/portfolio.PNG" />
     <!-- meta description-->
-    <meta name="description"
-        content="Portfolio de Hugo VIROT, développeur et formateur en développement web basé à NIORT | découvrez mon parcours, mes projets, mes compétences et technologies">
+    <meta
+      name="description"
+      content="Portfolio de Hugo VIROT, développeur et formateur en développement web basé à NIORT | découvrez mon parcours, mes projets, mes compétences et technologies"
+    />
     <!-- lien CSS de Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
     <!-- lien font awesome -->
-    <script src="https://kit.fontawesome.com/6259f9b52f.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/6259f9b52f.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- favicon -->
-    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="icon" type="image/png" href="images/favicon.png" />
     <!-- lien css -->
-    <link rel="stylesheet" href="./style.css">
-</head>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
 
-<body>
-
+  <body>
     <header>
-
-        <nav class="navbar navbar-dark fixed-top navbar-expand-lg blueBackground d-md-flex flex-column">
-            <img src="./images/photo_profil.jpeg" alt="photo de profil" id="photoProfil">
-            <p class="fs-3 mb-0">Hugo Virot, Développeur Web
-            </p>
-            <a class="navbar-brand" href="#"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
-                data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="offcanvas offcanvas-end blueBackground" tabindex="-1" id="offcanvasDarkNavbar">
-                <div class="offcanvas-header">
-                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
-                        aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                    <ul class="navbar-nav d-flex align-items-center">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">accueil</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#parcours">parcours</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#competences">compétences</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#projets">projets</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contact">contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+      <nav
+        class="navbar navbar-dark fixed-top navbar-expand-lg blueBackground d-md-flex flex-column"
+      >
+        <img
+          src="./images/photo_profil.jpeg"
+          alt="photo de profil"
+          id="photoProfil"
+        />
+        <p class="fs-3 mb-0">Hugo Virot, Développeur Web</p>
+        <a class="navbar-brand" href="#"></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasDarkNavbar"
+          aria-controls="offcanvasDarkNavbar"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end blueBackground"
+          tabindex="-1"
+          id="offcanvasDarkNavbar"
+        >
+          <div class="offcanvas-header">
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav d-flex align-items-center">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >accueil</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#parcours">parcours</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#competences">compétences</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#projets">projets</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
 
     <main>
-        <!-- grande image + h1-->
-        <section class="container-fluid" id="hero">
-            <div id="heroTexts" class="m-0 m-md-5 me-auto ps-2 ps-md-5 text-start">
-                <p class="fs-2" id="passion">Ma passion : </p>
-                <h1>Réinventer <span class="blueBackground p-2">le web <i class="fa-solid fa-terminal"></i></span> </h1>
-                <div class="row mt-3">
-                    <div class="col-sm-6 mb-3 mb-sm-0 col-md-4 me-lg-5">
-                        <a href="./CV_Hugo_VIROT.pdf" class="btn">CV</a>
-                    </div>
-                    <div class="col-sm-6 col-md-4">
-                        <a href="#parcours" class="btn">Parcours</a>
-                    </div>
-                </div>
+      <!-- grande image + h1-->
+      <section class="container-fluid" id="hero">
+        <div id="heroTexts" class="m-0 m-md-5 me-auto ps-2 ps-md-5 text-start">
+          <p class="fs-2" id="passion">Ma passion :</p>
+          <h1>
+            Réinventer
+            <span class="blueBackground p-2"
+              >le web <i class="fa-solid fa-terminal"></i
+            ></span>
+          </h1>
+          <div class="row mt-3">
+            <div class="col-sm-6 mb-3 mb-sm-0 col-md-4 me-lg-5">
+              <!-- <a href="./CV_Hugo_VIROT.pdf" class="btn">CV</a> -->
+              <a href="#competences" class="btn">Compétences</a>
             </div>
-        </section>
-
-        <!-- texte avec fond bleu -->
-        <div class="container-fluid blueBackground p-5" id="passions">
-            <div class="row">
-                <div class="animate-on-scroll text-left col-md-8 col-lg-6 offset-md-2 offset-lg-3 fst-italic fs-5">
-                    <p><i class="fa-solid fa-2x fa-quote-left me-2"></i>Réinventer le web.</p>
-                    <p>Améliorer sans cesse l'expérience utilisateur.</p>
-                    <p>Ecrire un code simple, performant et maintenable.</p>
-                    <p>Voici les passions qui m'animent.<i class="fa-solid fa-2x fa-quote-right ms-2"></i></p>
-                </div>
+            <div class="col-sm-6 col-md-4">
+              <a href="#projets" class="btn">Projets</a>
             </div>
-
-            <div class="row mt-5 text-center" id="numbers">
-
-                <div class="col-md-4">
-                    <div class="number m-2" id="anneesExp"></div>
-                    <p>ans d'expérience</p>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="number m-2" id="anneeEtudes"></div>
-                    <p>niveau BAC +</p>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="number m-2" id="technologies"></div>
-                    <p>technologies maîtrisées</p>
-                </div>
-
-            </div>
-
+          </div>
         </div>
+      </section>
 
-        <!-- parcours-->
-        <section class="container py-5 text-center" id="parcours">
-            <h2 class="blueText my-5">
-                &lt; parcours />
-            </h2>
-
-            <div class="row my-5 d-flex align-items-center">
-                <div class="col-md-6 mb-4 mb-md-0">
-                    <img src="./images/logo_arinfo.png" alt="logo arinfo">
-                </div>
-                <div class="col-md-6">
-                    <div class="blueBackground rounded-5 p-4 fs-5">
-                        <p class="dates">depuis fin 2020</p>
-                        <p class="fs-3">FORMATEUR EN DEVELOPPEMENT WEB (BAC +2) ET CDA (BAC +4)</p>
-                        <p>Centre de formation Arinfo (Niort)</p>
-                        <p>PHP (Laravel) / JavaScript (Vue JS, React Native) / HTML-CSS (SASS, Bootstrap) / MySQL</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row my-5 d-flex align-items-center">
-                <div class="col-md-6">
-                    <div class="blueBackground rounded-5 p-4 fs-5">
-                        <p class="dates">2022-2023</p>
-                        <p class="fs-3">TITRE PRO CONCEPTEUR DÉVELOPPEUR D'APPLICATIONS (BAC +4 / candidat libre)</p>
-                        <p>Création d'une application web multicouches (API Laravel + front-end Vue JS)</p>
-                        <p>PHP (Laravel) / JavaScript (Vue JS) / HTML/CSS (Bootstrap) / MySQL</p>
-                    </div>
-                </div>
-                <div class="col-md-6 order-first order-md-last mb-4 mb-md-0">
-                    <img src="./images/rncp.png" alt="badge rncp" class="w-25">
-                </div>
-            </div>
-
-            <div class="row my-5 d-flex align-items-center mb-4 mb-md-0">
-                <div class="col-md-6 mb-4 mb-md-0">
-                    <img src="./images/Logo_enedis.png" alt="logo Enedis" class="w-50">
-                </div>
-                <div class="col-md-6">
-                    <div class="blueBackground rounded-5 p-4 fs-5">
-                        <p class="dates">2019 - 2020</p>
-                        <p class="fs-3">DÉVELOPPEUR WEB EN ALTERNANCE CHEZ ENEDIS</p>
-                        <p>application interne de traitement de données,
-                            déploiement national</p>
-                        <p>PHP (Code Igniter) / JavaScript (librairies DataTables, ChartJS) / HTML/CSS (Bootstrap) /
-                            MySQL</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row my-5 d-flex align-items-center">
-                <div class="col-md-6">
-                    <div class="blueBackground rounded-5 p-4 fs-5">
-                        <p class="dates">2019-2020</p>
-                        <p class="fs-3">TITRE PRO DÉVELOPPEUR WEB (BAC+2)</p>
-                        <p>Le Campus Numérique (Valence)</p>
-                        <p>formation full-stack : PHP (Laravel) / JavaScript (Vue JS / React Native) / HTML-CSS
-                            (Bootstrap) / MySQL</p>
-                    </div>
-                </div>
-                <div class="col-md-6 order-first order-md-last mb-4 mb-md-0">
-                    <img src="./images/logo_campus.png" alt="logo campus numérique">
-                </div>
-            </div>
-
-            <a href="#contact" class="btn mx-auto">Contact</a>
-
-        </section>
-
-        <!-- compétences-->
-        <section class="container-fluid p-5 blueBackground text-center" id="competences">
-            <h2>
-                &lt; compétences />
-            </h2>
-
-            <p class="fs-5 my-5 animate-on-scroll"><i class="fa-solid fa-2x fa-quote-left me-2"></i>
-                J'ai un profil full-stack : je suis polyvalent et j'aime ça !
-                <i class="fa-solid fa-2x fa-quote-right ms-2"></i>
+      <!-- texte avec fond bleu -->
+      <div class="container-fluid blueBackground p-5" id="passions">
+        <div class="row">
+          <div
+            class="animate-on-scroll text-left col-md-8 col-lg-6 offset-md-2 offset-lg-3 fst-italic fs-5"
+          >
+            <p>
+              <i class="fa-solid fa-2x fa-quote-left me-2"></i>Réinventer le
+              web.
             </p>
-
-            <div class="row ">
-                <div class="col-md-4 mt-5 mt-md-0 animate-on-scroll">
-                    <i class="fa-solid fa-4x fa-code"></i>
-                    <h3 class="my-3">front-end</h3>
-                    <p>sites vitrines HTML/CSS, applis web JavaScript (Vue / React), applis mobile (React Native)</p>
-                </div>
-                <div class="col-md-4 mt-5 mt-md-0 animate-on-scroll">
-                    <i class="fa-solid fa-4x fa-database"></i>
-                    <h3 class="my-3">back-end</h3>
-                    <p>sites dynamiques et API PHP/Laravel avec bases de données MySQL</p>
-                </div>
-                <div class="col-md-4 mt-5 mt-md-0 animate-on-scroll">
-                    <i class="fa-solid fa-4x fa-list-check"></i>
-                    <h3 class="my-3">Gestion de projet</h3>
-                    <p>Méthode Agile (Scrum, Kanban, Prince2), cahier des charges et dossiers de conception, diagramme
-                        de Gantt</p>
-                </div>
-                <div class="col-md-4 mt-5 animate-on-scroll">
-                    <i class="fa-solid fa-4x fa-pencil"></i>
-                    <h3 class="my-3">design</h3>
-                    <p>Maquettage / charte graphique / UI - UX (interface / expérience utilisateur)</p>
-                </div>
-                <div class="col-md-4 mt-5 animate-on-scroll">
-                    <i class="fa-solid fa-4x fa-graduation-cap"></i>
-                    <h3 class="my-3">transmission de connaissances</h3>
-                    <p>37 élèves formés, du BAC+2 au BAC+4 (92% de réussite)</p>
-                </div>
-                <div class="col-md-4 mt-5 animate-on-scroll">
-                    <i class="fa-solid fa-4x fa-flag-usa"></i>
-                    <h3 class="my-3">Maîtrise de l'anglais</h3>
-                    <p>Niveau avancé, équivalent C1 (très bonne compréhension / expression à l'écrit et à l'oral)</p>
-                </div>
-            </div>
-
-        </section>
-
-        <!-- projets-->
-        <section class="container-fluid p-5 d-flex align-items-center justify-content-center" id="projets">
-            <h2>
-                &lt; projets />
-            </h2>
-        </section>
-
-        <section class="container-fluid bg-white mt-3 p-2 p-md-5" id="aperçusProjets">
-
-            <div class="row">
-
-                <!-- image projet 1 -->
-                <div class="col-md-6 col-lg-4 text-center mb-4 ">
-                    <a role="button" data-bs-toggle="modal" data-bs-target="#modalProjet1">
-                        <img src="./images/captures_sliders/sportetfoi1.PNG"
-                            alt="capture accueil site Sport&Foi Valence">
-                    </a>
-                </div>
-
-                <!-- Modal projet 1 -->
-                <div class="modal fade" id="modalProjet1" tabindex="-1" aria-labelledby="labelModalProjet1"
-                    aria-hidden="true">
-
-                    <div class="modal-dialog modal-fullscreen">
-                        <div class="modal-content blueBackground">
-                            <div class="modal-header">
-                                <h1 class="modal-title mx-auto text-center" id="labelModalProjet1">
-                                    Sport et Foi Valence
-                                </h1>
-                            </div>
-
-                            <div class="modal-body p-3 p-md-5 mt-lg-2 d-flex align-items-center">
-
-                                <div class="row">
-
-                                    <div class="col-lg-8 mt-lg-2">
-
-                                        <div id="carouselProjet1" class="carousel slide container mt-lg-2 mb-3">
-                                            <div class="carousel-indicators">
-                                                <button type="button" data-bs-target="#carouselProjet1"
-                                                    data-bs-slide-to="0" class="active" aria-current="true"
-                                                    aria-label="Slide 1"></button>
-                                                <button type="button" data-bs-target="#carouselProjet1"
-                                                    data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                                <button type="button" data-bs-target="#carouselProjet1"
-                                                    data-bs-slide-to="2" aria-label="Slide 3"></button>
-                                            </div>
-                                            <div class="carousel-inner">
-                                                <div class="carousel-item active">
-                                                    <img src="./images/captures_sliders/sportetfoi1.PNG"
-                                                        class="d-block w-100"
-                                                        alt="capture accueil site Sport&Foi Valence">
-                                                </div>
-                                                <div class="carousel-item">
-                                                    <img src="./images/captures_sliders/sportetfoi2.PNG"
-                                                        class="d-block w-100"
-                                                        alt="capture rubrique inscription site Sport&Foi Valence">
-                                                </div>
-                                                <div class="carousel-item">
-                                                    <img src="./images/captures_sliders/sportetfoi3.PNG"
-                                                        class="d-block w-100"
-                                                        alt="capture rubrique sections site Sport&Foi Valence">
-                                                </div>
-                                            </div>
-                                            <button class="carousel-control-prev" type="button"
-                                                data-bs-target="#carouselProjet1" data-bs-slide="prev">
-                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                                <span class="visually-hidden">Previous</span>
-                                            </button>
-                                            <button class="carousel-control-next" type="button"
-                                                data-bs-target="#carouselProjet1" data-bs-slide="next">
-                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                                <span class="visually-hidden">Next</span>
-                                            </button>
-                                        </div>
-
-                                    </div>
-
-                                    <div class="col-lg-4 d-flex flex-column justify-content-around">
-
-                                        <div>
-                                            <h2>Le projet</h2>
-                                            <ul>
-                                                <li>Site réalisé pour une association sportive</li>
-                                                <li>site statique en HTML / CSS / Bootstrap : suffisant pour le projet,
-                                                    chargement plus rapide</li>
-                                                <li>Nombreuses pages : accueil, une page par section sportive,
-                                                    historique, téléchargements, etc</li>
-                                                <li>mises à jour régulières (ajout d'actualités + modifications code)
-                                                </li>
-                                            </ul>
-                                        </div>
-
-                                        <div>
-                                            <h2>Dates</h2>
-                                            <p>janvier 2021 - présent</p>
-                                        </div>
-
-                                        <div>
-                                            <h2>Technos utilisées</h2>
-                                            <div class="d-flex justify-content-around flex-wrap px-4">
-                                                <i class="fa-brands fa-3x fa-html5"></i>
-                                                <i class="fa-brands fa-3x  fa-css3-alt"></i>
-                                                <i class="fa-brands fa-3x  fa-bootstrap"></i>
-                                                <i class="fa-brands fa-3x fa-square-git"></i>
-                                                <i class="fa-brands fa-3x fa-github"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="modal-footer text-center">
-                                <div class="mx-auto">
-                                    <a href="https://www.sportetfoivalence.fr" target="_blank"
-                                        class="btn btn-lg btn-light mx-auto">visiter le
-                                        site
-                                    </a>
-                                    <button type="button" class="btn btn-lg btn-light mx-auto mt-3 mt-sm-0"
-                                        data-bs-dismiss="modal">retour</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- image projet 2 -->
-                <div class="col-md-6 col-lg-4 text-center mb-4 ">
-                    <a role="button" data-bs-toggle="modal" data-bs-target="#modalProjet2">
-                        <img src="./images/niceplaces.PNG" alt="capture accueil site Nice Places">
-                    </a>
-                </div>
-
-                <!-- Modal projet 2 -->
-                <div class="modal fade" id="modalProjet2" tabindex="-1" aria-labelledby="labelModalProjet2"
-                    aria-hidden="true">
-                    <div class="modal-dialog modal-fullscreen">
-                        <div class="modal-content blueBackground">
-                            <div class="modal-header">
-                                <h1 class="modal-title mx-auto text-center" id="labelModalProjet2">
-                                    Nice Places
-                                </h1>
-                            </div>
-
-                            <div class="modal-body p-3 p-md-5 d-flex align-items-around">
-
-                                <div class="row">
-
-                                    <div class="col-lg-8 mt-lg-2">
-
-                                        <div id="carouselProjet2" class="carousel slide container mt-4 mt-lg-2 mb-3">
-                                            <div class="carousel-indicators">
-                                                <button type="button" data-bs-target="#carouselProjet2"
-                                                    data-bs-slide-to="0" class="active" aria-current="true"
-                                                    aria-label="Slide 1"></button>
-                                                <button type="button" data-bs-target="#carouselProjet2"
-                                                    data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                                <button type="button" data-bs-target="#carouselProjet2"
-                                                    data-bs-slide-to="2" aria-label="Slide 3"></button>
-                                                <button type="button" data-bs-target="#carouselProjet2"
-                                                    data-bs-slide-to="3" aria-label="Slide 4"></button>
-                                                <button type="button" data-bs-target="#carouselProjet2"
-                                                    data-bs-slide-to="4" aria-label="Slide 5"></button>
-                                                <button type="button" data-bs-target="#carouselProjet2"
-                                                    data-bs-slide-to="5" aria-label="Slide 6"></button>
-                                                <button type="button" data-bs-target="#carouselProjet2"
-                                                    data-bs-slide-to="6" aria-label="Slide 7"></button>
-                                            </div>
-                                            <div class="carousel-inner">
-                                                <div class="carousel-item active">
-                                                    <img src="./images/niceplaces.PNG" class="d-block w-100"
-                                                        alt="capture accueil site Nice Places">
-                                                </div>
-                                                <div class="carousel-item">
-                                                    <img src="./images/captures_sliders/niceplaces2.PNG"
-                                                        class="d-block w-100" alt="capture accueil site Nice Places">
-                                                </div>
-                                                <div class="carousel-item">
-                                                    <img src="./images/captures_sliders/niceplaces3.PNG"
-                                                        class="d-block w-100"
-                                                        alt="capture page catégories site Nice Places">
-                                                </div>
-                                                <div class="carousel-item">
-                                                    <img src="./images/captures_sliders/niceplaces4.PNG"
-                                                        class="d-block w-100"
-                                                        alt="capture page création lieu site Nice Places">
-                                                </div>
-                                                <div class="carousel-item">
-                                                    <img src="./images/captures_sliders/niceplaces5.PNG"
-                                                        class="d-block w-100"
-                                                        alt="capture page proposer image site Nice Places">
-                                                </div>
-                                                <div class="carousel-item">
-                                                    <img src="./images/captures_sliders/niceplaces6.PNG"
-                                                        class="d-block w-100" alt="capture page lieu Nice Places">
-                                                </div>
-                                                <div class="carousel-item">
-                                                    <img src="./images/captures_sliders/niceplaces7.PNG"
-                                                        class="d-block w-100" alt="capture page carte site Nice Places">
-                                                </div>
-                                            </div>
-                                            <button class="carousel-control-prev" type="button"
-                                                data-bs-target="#carouselProjet2" data-bs-slide="prev">
-                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                                <span class="visually-hidden">Previous</span>
-                                            </button>
-                                            <button class="carousel-control-next" type="button"
-                                                data-bs-target="#carouselProjet2" data-bs-slide="next">
-                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                                <span class="visually-hidden">Next</span>
-                                            </button>
-                                        </div>
-
-                                    </div>
-
-                                    <div class="col-lg-4 d-flex flex-column justify-content-around">
-
-                                        <div>
-                                            <h2>Le projet</h2>
-                                            <ul>
-                                                <li>Site dynamique réalisé pour mon Titre Professionnel CDA</li>
-                                                <li>Partage de sorties nature avec carte interactive</li>
-                                                <li>application multicouche PHP / JavaScript : API Laravel et front-end
-                                                    Vue JS</li>
-                                                <li>Base de données MySQL</li>
-                                                <li>Nombreuses fonctionnalités : inscription et connexion, création de
-                                                    lieu avec
-                                                    upload d'image, système de favoris, notifications, back-office
-                                                    admin, etc</li>
-                                                <li>Temps de travail total (dossiers de conception et cahier des charges
-                                                    inclus) : environ 500 heures </li>
-                                            </ul>
-                                        </div>
-
-                                        <div>
-                                            <h2>Dates</h2>
-                                            <p>janvier 2022 - avril 2023</p>
-                                        </div>
-
-                                        <div>
-                                            <h2>Technos utilisées</h2>
-                                            <div class="d-flex justify-content-around flex-wrap px-4">
-                                                <i class="fa-brands fa-3x fa-html5"></i>
-                                                <i class="fa-brands fa-3x  fa-css3-alt"></i>
-                                                <i class="fa-brands fa-3x  fa-bootstrap"></i>
-                                                <i class="fa-brands fa-3x  fa-square-js"></i>
-                                                <i class="fa-brands fa-3x  fa-vuejs"></i>
-                                                <i class="fa-brands fa-3x  fa-php"></i>
-                                                <i class="fa-brands fa-3x  fa-laravel"></i>
-                                                <img src="./images/mysql.png" class="mysql" alt="logo mysql">
-                                                <i class="fa-brands fa-3x fa-square-git"></i>
-                                                <i class="fa-brands fa-3x fa-github"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="modal-footer text-center">
-                                <div class="mx-auto">
-                                    <p>NB : le site peut être temporairement inaccessible (changement d'hébergeur en
-                                        cours). Revenez
-                                        prochainement si le lien ne fonctionne pas.</p>
-                                    <a href="https://www.nice-places.fr" target="_blank"
-                                        class="btn btn-lg btn-light mx-auto">visiter le
-                                        site
-                                    </a>
-                                    <button type="button" class="btn btn-lg btn-light mx-auto mt-3 mt-sm-0"
-                                        data-bs-dismiss="modal">retour</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- image projet 3 -->
-                <div class="col-md-6 col-lg-4 text-center mb-4 ">
-                    <a role="button" data-bs-toggle="modal" data-bs-target="#modalProjet3">
-                        <img src="./images/portfolio.PNG" alt="capture accueil Portfolio">
-                    </a>
-                </div>
-
-                <!-- Modal projet 3 -->
-                <div class="modal fade" id="modalProjet3" tabindex="-1" aria-labelledby="labelModalProjet3"
-                    aria-hidden="true">
-                    <div class="modal-dialog modal-fullscreen">
-                        <div class="modal-content blueBackground">
-                            <div class="modal-header">
-                                <h1 class="modal-title mx-auto text-center" id="labelModalProjet3"> Portfolio 2024
-                                </h1>
-                            </div>
-
-                            <div class="modal-body p-3 p-md-5 d-flex align-items-around">
-
-                                <div class="row">
-
-                                    <div class="col-lg-8 mt-lg-2">
-
-                                        <div id="carouselProjet3" class="carousel slide container mt-4 mt-lg-2 mb-3">
-                                            <div class="carousel-indicators">
-                                                <button type="button" data-bs-target="#carouselProjet3"
-                                                    data-bs-slide-to="0" class="active" aria-current="true"
-                                                    aria-label="Slide 1"></button>
-                                                <button type="button" data-bs-target="#carouselProjet3"
-                                                    data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                            </div>
-                                            <div class="carousel-inner">
-                                                <div class="carousel-item active">
-                                                    <img src="./images/portfolio.PNG" class="d-block w-100"
-                                                        alt="capture accueil Portfolio">
-                                                </div>
-                                                <div class="carousel-item">
-                                                    <img src="./images/captures_sliders/ancienportfolio.png"
-                                                        class="d-block w-100" alt="capture accueil ancien Portfolio">
-                                                </div>
-                                            </div>
-                                            <button class="carousel-control-prev" type="button"
-                                                data-bs-target="#carouselProjet3" data-bs-slide="prev">
-                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                                <span class="visually-hidden">Previous</span>
-                                            </button>
-                                            <button class="carousel-control-next" type="button"
-                                                data-bs-target="#carouselProjet3" data-bs-slide="next">
-                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                                <span class="visually-hidden">Next</span>
-                                            </button>
-                                        </div>
-
-                                    </div>
-
-                                    <div class="col-lg-4 d-flex flex-column justify-content-around">
-
-                                        <div>
-                                            <h2>Le projet</h2>
-                                            <ul>
-                                                <li>Nouveau portfolio pour me présenter</li>
-                                                <li>Objectifs : me faire connaître de façon moderne et lisible</li>
-                                                <li>Site statique en HTML / CSS (SASS) / Bootstrap</li>
-                                                <li>Utilisation de JavaScript et CSS pour les animations</li>
-                                                <li>Remplace le précédent (seconde capture du carousel) </li>
-                                            </ul>
-                                        </div>
-
-                                        <div>
-                                            <h2>Dates</h2>
-                                            <p>novembre 2023 - mars 2024</p>
-                                        </div>
-
-                                        <div>
-                                            <h2>Technos utilisées</h2>
-                                            <div class="d-flex justify-content-around flex-wrap px-4">
-                                                <i class="fa-brands fa-3x fa-html5"></i>
-                                                <i class="fa-brands fa-3x  fa-css3-alt"></i>
-                                                <i class="fa-brands fa-3x fa-sass"></i>
-                                                <i class="fa-brands fa-3x  fa-bootstrap"></i>
-                                                <i class="fa-brands fa-3x  fa-square-js"></i>
-                                                <i class="fa-brands fa-3x fa-square-git"></i>
-                                                <i class="fa-brands fa-3x fa-github"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="modal-footer text-center">
-                                <div class="mx-auto">
-                                    <button type="button" class="btn btn-lg btn-light mx-auto px-5"
-                                        data-bs-dismiss="modal">retour</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- image projet 4 -->
-                <div class="col-md-6 col-lg-4 text-center mb-4 ">
-                    <a role="button" data-bs-toggle="modal" data-bs-target="#modalProjet4">
-                        <img src="./images/piloter.PNG" alt="capture accueil site Pilot'ER">
-                    </a>
-                </div>
-
-                <!-- Modal -->
-                <div class="modal fade" id="modalProjet4" tabindex="-1" aria-labelledby="labelModalProjet4"
-                    aria-hidden="true">
-                    <div class="modal-dialog modal-fullscreen">
-                        <div class="modal-content blueBackground">
-                            <div class="modal-header">
-                                <h1 class="modal-title mx-auto text-center" id="labelModalProjet4">Pilot'ER
-                                </h1>
-                            </div>
-
-                            <div class="modal-body p-3 p-md-5 d-flex mt-lg-2 align-items-around">
-
-                                <div class="row">
-
-                                    <div class="col-lg-8 mt-lg-2">
-
-                                        <div id="carouselProjet4" class="carousel slide mt-4 mt-lg-2 container mb-3">
-                                            <div class="carousel-indicators">
-                                                <button type="button" data-bs-target="#carouselProjet4"
-                                                    data-bs-slide-to="0" class="active" aria-current="true"
-                                                    aria-label="Slide 1"></button>
-                                                <button type="button" data-bs-target="#carouselProjet4"
-                                                    data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                                <button type="button" data-bs-target="#carouselProjet4"
-                                                    data-bs-slide-to="2" aria-label="Slide 3"></button>
-                                                <button type="button" data-bs-target="#carouselProjet4"
-                                                    data-bs-slide-to="3" aria-label="Slide 4"></button>
-                                            </div>
-                                            <div class="carousel-inner">
-                                                <div class="carousel-item active">
-                                                    <img src="./images/piloter.PNG" class="d-block w-100"
-                                                        alt="capture accueil site Pilot'ER">
-                                                </div>
-                                                <div class="carousel-item">
-                                                    <img src="./images/captures_sliders/piloter2.PNG"
-                                                        class="d-block w-100" alt="capture page CPA site Pilot'ER">
-                                                </div>
-                                                <div class="carousel-item">
-                                                    <img src="./images/captures_sliders/piloter3.PNG"
-                                                        class="d-block w-100" alt="capture page tableau site Pilot'ER">
-                                                </div>
-                                                <div class="carousel-item">
-                                                    <img src="./images/captures_sliders/piloter4.PNG"
-                                                        class="d-block w-100"
-                                                        alt="capture page statistiques site Pilot'ER">
-                                                </div>
-                                            </div>
-                                            <button class="carousel-control-prev" type="button"
-                                                data-bs-target="#carouselProjet4" data-bs-slide="prev">
-                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                                <span class="visually-hidden">Previous</span>
-                                            </button>
-                                            <button class="carousel-control-next" type="button"
-                                                data-bs-target="#carouselProjet4" data-bs-slide="next">
-                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                                <span class="visually-hidden">Next</span>
-                                            </button>
-                                        </div>
-
-                                    </div>
-
-                                    <div class="col-lg-4 d-flex flex-column justify-content-around">
-
-                                        <div>
-                                            <h2>Le projet</h2>
-                                            <ul>
-                                                <li>Application interne de traitement de données</li>
-                                                <li>Projet réalisé lors de mon alternance chez Enedis Valence</li>
-                                                <li>Analyse des fichiers Excel d'environ 40 colonnes et 20 000 lignes,
-                                                    compare
-                                                    avec les données stockées
-                                                    en base, et réalise les insertions / modifications nécessaires</li>
-                                                <li>Affichage de données et statistiques dans des tableaux (plusieurs
-                                                    dizaines) ou via des graphiques (idem)</li>
-                                                <li>Framework PHP (CodeIgniter) + base de données MySQL +
-                                                    HTML/CSS/Bootstrap pour l'affichage + librairies JS pour les
-                                                    tableaux (DataTables) et les statistiques (ChartJS)</li>
-                                            </ul>
-                                        </div>
-
-                                        <div>
-                                            <h2>Dates</h2>
-                                            <p>juin 2019 - juin 2020</p>
-                                        </div>
-
-                                        <div>
-                                            <h2>Technos utilisées</h2>
-                                            <div class="d-flex justify-content-around flex-wrap px-4">
-                                                <i class="fa-brands fa-3x fa-html5"></i>
-                                                <i class="fa-brands fa-3x fa-css3-alt"></i>
-                                                <i class="fa-brands fa-3x fa-bootstrap"></i>
-                                                <i class="fa-brands fa-3x fa-square-js"></i>
-                                                <i class="fa-brands fa-3x fa-php"></i>
-                                                <i class="fa-brands fa-3x fa-square-git"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="modal-footer text-center">
-                                <button type="button" class="btn btn-lg btn-light mx-auto px-5"
-                                    data-bs-dismiss="modal">retour</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- image projet 5 -->
-                <div class="col-md-6 col-lg-4 text-center mb-4 ">
-                    <a role="button" data-bs-toggle="modal" data-bs-target="#modalProjet5">
-                        <img src="./images/madagascartsboutique.PNG" alt="capture accueil site Madagasc'arts Boutique">
-                    </a>
-                </div>
-
-                <!-- Modal -->
-                <div class="modal fade" id="modalProjet5" tabindex="-1" aria-labelledby="labelModalProjet5"
-                    aria-hidden="true">
-                    <div class="modal-dialog modal-fullscreen">
-                        <div class="modal-content blueBackground">
-                            <div class="modal-header">
-                                <h1 class="modal-title mx-auto text-center" id="labelModalProjet5"> Madagasc'arts
-                                    Boutique
-                                </h1>
-                            </div>
-
-
-                            <div class="modal-body p-3 p-md-5 d-flex mt-lg-2 align-items-around">
-
-                                <div class="row">
-
-                                    <div class="col-lg-8 mt-lg-2">
-
-                                        <div id="carouselProjet5" class="carousel slide mt-4 mt-lg-2 container mb-3">
-                                            <div class="carousel-indicators">
-                                                <button type="button" data-bs-target="#carouselProjet5"
-                                                    data-bs-slide-to="0" class="active" aria-current="true"
-                                                    aria-label="Slide 1"></button>
-                                                <button type="button" data-bs-target="#carouselProjet5"
-                                                    data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                                <button type="button" data-bs-target="#carouselProjet5"
-                                                    data-bs-slide-to="2" aria-label="Slide 3"></button>
-                                                <button type="button" data-bs-target="#carouselProjet5"
-                                                    data-bs-slide-to="3" aria-label="Slide 4"></button>
-                                            </div>
-                                            <div class="carousel-inner">
-                                                <div class="carousel-item active">
-                                                    <img src="./images/madagascartsboutique.PNG" class="d-block w-100"
-                                                        alt="capture accueil site Madagasc'arts Boutique">
-                                                </div>
-                                                <div class="carousel-item">
-                                                    <img src="./images/captures_sliders/mada2.png" class="d-block w-100"
-                                                        alt="capture section produits stars site Madagasc'arts Boutique">
-                                                </div>
-                                                <div class="carousel-item">
-                                                    <img src="./images/captures_sliders/mada3.png" class="d-block w-100"
-                                                        alt="capture section boutique site Madagasc'arts Boutique">
-                                                </div>
-                                                <div class="carousel-item">
-                                                    <img src="./images/captures_sliders/mada4.png" class="d-block w-100"
-                                                        alt="capture section contact site Madagasc'arts Boutique">
-                                                </div>
-                                            </div>
-                                            <button class="carousel-control-prev" type="button"
-                                                data-bs-target="#carouselProjet5" data-bs-slide="prev">
-                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                                <span class="visually-hidden">Previous</span>
-                                            </button>
-                                            <button class="carousel-control-next" type="button"
-                                                data-bs-target="#carouselProjet5" data-bs-slide="next">
-                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                                <span class="visually-hidden">Next</span>
-                                            </button>
-                                        </div>
-
-                                    </div>
-
-                                    <div class="col-lg-4 d-flex flex-column justify-content-around">
-
-                                        <div>
-                                            <h2>Le projet</h2>
-                                            <ul>
-                                                <li>Site vitrine réalisé pour une commerçante présente sur des marchés
-                                                </li>
-                                                <li>Présente le commerce et les articles vendus (artisanat et épices)
-                                                </li>
-                                                <li>Site statique HTML / CSS / Bootstrap
-                                                </li>
-                                            </ul>
-                                        </div>
-
-                                        <div>
-                                            <h2>Dates</h2>
-                                            <p>janvier 2022 - mis à jour en février / mars 2024</p>
-                                        </div>
-
-                                        <div>
-                                            <h2>Technos utilisées</h2>
-                                            <div class="d-flex justify-content-around flex-wrap px-4">
-                                                <i class="fa-brands fa-3x fa-html5"></i>
-                                                <i class="fa-brands fa-3x  fa-css3-alt"></i>
-                                                <i class="fa-brands fa-3x fa-sass"></i>
-                                                <i class="fa-brands fa-3x  fa-bootstrap"></i>
-                                                <i class="fa-brands fa-3x fa-square-git"></i>
-                                                <i class="fa-brands fa-3x fa-github"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="modal-footer text-center">
-                                <div class="mx-auto">
-                                    <a href="https://www.madagascarts-boutique.com" target="_blank"
-                                        class="btn btn-lg btn-light mx-auto">visiter le site
-                                    </a>
-                                    <button type="button" class="btn btn-lg btn-light mx-auto mt-3 mt-sm-0"
-                                        data-bs-dismiss="modal">retour</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- image projet 6 -->
-                <div class="col-md-6 col-lg-4 text-center mb-4 ">
-                    <a role="button" data-bs-toggle="modal" data-bs-target="#modalProjet6">
-                        <img src="./images/laravelonlinestore.PNG" alt="capture accueil site Laravel Online Store">
-                    </a>
-                </div>
-
-                <!-- Modal -->
-                <div class="modal fade" id="modalProjet6" tabindex="-1" aria-labelledby="labelModalProjet6"
-                    aria-hidden="true">
-                    <div class="modal-dialog modal-fullscreen">
-                        <div class="modal-content blueBackground">
-                            <div class="modal-header">
-                                <h1 class="modal-title mx-auto text-center" id="labelModalProjet6">Laravel Online Store
-                                </h1>
-                            </div>
-
-
-                            <div class="modal-body p-3 p-md-5 d-flex mt-4 mt-lg-2 align-items-around">
-
-                                <div class="row">
-
-                                    <div class="col-lg-8 mt-lg-2">
-
-                                        <div id="carouselProjet6" class="carousel slide mt-lg-2 container mb-3">
-                                            <div class="carousel-indicators">
-                                                <button type="button" data-bs-target="#carouselProjet6"
-                                                    data-bs-slide-to="0" class="active" aria-current="true"
-                                                    aria-label="Slide 1"></button>
-                                                <button type="button" data-bs-target="#carouselProjet6"
-                                                    data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                                <button type="button" data-bs-target="#carouselProjet6"
-                                                    data-bs-slide-to="2" aria-label="Slide 3"></button>
-                                                <button type="button" data-bs-target="#carouselProjet6"
-                                                    data-bs-slide-to="3" aria-label="Slide 4"></button>
-                                                <button type="button" data-bs-target="#carouselProjet6"
-                                                    data-bs-slide-to="4" aria-label="Slide 5"></button>
-                                                <button type="button" data-bs-target="#carouselProjet6"
-                                                    data-bs-slide-to="5" aria-label="Slide 6"></button>
-                                                <button type="button" data-bs-target="#carouselProjet6"
-                                                    data-bs-slide-to="6" aria-label="Slide 7"></button>
-                                            </div>
-                                            <div class="carousel-inner">
-                                                <div class="carousel-item active">
-                                                    <img src="./images/laravelonlinestore.PNG" class="d-block w-100"
-                                                        alt="capture accueil site Laravel Online Store">
-                                                </div>
-                                                <div class="carousel-item">
-                                                    <img src="./images/captures_sliders/laravelonlinestore2.PNG"
-                                                        class="d-block w-100"
-                                                        alt="capture page catalogue site Laravel Online Store">
-                                                </div>
-                                                <div class="carousel-item">
-                                                    <img src="./images/captures_sliders/laravelonlinestore3.PNG"
-                                                        class="d-block w-100"
-                                                        alt="capture page gammes site Laravel Online Store">
-                                                </div>
-                                                <div class="carousel-item">
-                                                    <img src="./images/captures_sliders/laravelonlinestore4.PNG"
-                                                        class="d-block w-100"
-                                                        alt="capture page détails produit site Laravel Online Store">
-                                                </div>
-                                                <div class="carousel-item">
-                                                    <img src="./images/captures_sliders/laravelonlinestore5.PNG"
-                                                        class="d-block w-100"
-                                                        alt="capture page panier Laravel Online Store">
-                                                </div>
-                                                <div class="carousel-item">
-                                                    <img src="./images/captures_sliders/laravelonlinestore6.PNG"
-                                                        class="d-block w-100"
-                                                        alt="capture page mon compte Laravel Online Store">
-                                                </div>
-                                                <div class="carousel-item">
-                                                    <img src="./images/captures_sliders/laravelonlinestore7.PNG"
-                                                        class="d-block w-100"
-                                                        alt="capture page validation commande Laravel Online Store">
-                                                </div>
-                                            </div>
-                                            <button class="carousel-control-prev" type="button"
-                                                data-bs-target="#carouselProjet6" data-bs-slide="prev">
-                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                                <span class="visually-hidden">Previous</span>
-                                            </button>
-                                            <button class="carousel-control-next" type="button"
-                                                data-bs-target="#carouselProjet6" data-bs-slide="next">
-                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                                <span class="visually-hidden">Next</span>
-                                            </button>
-                                        </div>
-
-                                    </div>
-
-                                    <div class="col-lg-4 d-flex flex-column justify-content-around">
-
-                                        <div>
-                                            <h2>Le projet</h2>
-                                            <ul>
-                                                <li>Boutique en ligne fictive réalisée avec Laravel et MySQL (tourne en
-                                                    local)
-                                                </li>
-                                                <li>Thème : informatique / high-tech
-                                                </li>
-                                                <li>Correction d'un projet donné aux élèves
-                                                </li>
-                                                <li>Nombreuses fonctionnalités : inscription, connexion, ajout au
-                                                    panier, validation commande, modification des infos, etc
-                                                </li>
-                                                <li>Plusieurs mises à jour et améliorations apportées au fil du temps
-                                                </li>
-                                            </ul>
-                                        </div>
-
-                                        <div>
-                                            <h2>Dates</h2>
-                                            <p>décembre 2020 - juillet 2023</p>
-                                        </div>
-
-                                        <div>
-                                            <h2>Technos utilisées</h2>
-                                            <div class="d-flex justify-content-around flex-wrap px-4">
-                                                <i class="fa-brands fa-3x fa-html5"></i>
-                                                <i class="fa-brands fa-3x  fa-css3-alt"></i>
-                                                <i class="fa-brands fa-3x fa-sass"></i>
-                                                <i class="fa-brands fa-3x fa-bootstrap"></i>
-                                                <i class="fa-brands fa-3x fa-square-git"></i>
-                                                <i class="fa-brands fa-3x fa-github"></i>
-                                                <i class="fa-brands fa-3x fa-php"></i>
-                                                <i class="fa-brands fa-3x fa-laravel"></i>
-                                                <img src="./images/mysql.png" class="mysql" alt="logo mysql">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="modal-footer text-center">
-                                <button type="button" class="btn btn-lg btn-light mx-auto px-5"
-                                    data-bs-dismiss="modal">retour</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="text-center mt-2 mt-md-3 mb-4 mb-md-2">
-                <a href="#contact" class="btn mx-auto">Contact</a>
-            </div>
-
-        </section>
-
-        <!-- technos grande image-->
-        <section class="container-fluid p-5 blueBackground" id="technos">
-            <h2 class="blueText">
-                &lt; technologies />
-            </h2>
-        </section>
-
-
-        <!-- technos logos-->
-        <div class="container-fluid p-5 bg-white" id="logosTechnos">
-            <div class="d-flex justify-content-around flex-wrap blueText animate-on-scroll">
-                <i class="fa-brands fa-5x fa-html5"></i>
-                <i class="fa-brands fa-5x  fa-css3-alt"></i>
-                <i class="fa-brands fa-5x fa-sass"></i>
-                <i class="fa-brands fa-5x  fa-bootstrap"></i>
-                <i class="fa-brands fa-5x  fa-square-js"></i>
-                <i class="fa-brands fa-5x  fa-vuejs"></i>
-                <i class="fa-brands fa-5x  fa-react"></i>
-                <i class="fa-brands fa-5x  fa-php"></i>
-                <i class="fa-brands fa-5x  fa-laravel"></i>
-                <img src="./images/mysql.png" id="mysql" alt="logo mysql">
-                <i class="fa-brands fa-5x  fa-wordpress"></i>
-                <i class="fa-brands fa-5x  fa-java"></i>
-                <!-- <i class="fa-brands fa-3x  fa-docker"></i> -->
-                <i class="fa-brands fa-5x fa-square-git"></i>
-                <i class="fa-brands fa-5x fa-github"></i>
-            </div>
+            <p>Améliorer sans cesse l'expérience utilisateur.</p>
+            <p>Ecrire un code simple, performant et maintenable.</p>
+            <p>
+              Voici les passions qui m'animent.<i
+                class="fa-solid fa-2x fa-quote-right ms-2"
+              ></i>
+            </p>
+          </div>
         </div>
 
+        <div class="row mt-5 text-center" id="numbers">
+          <div class="col-md-4">
+            <div class="number m-2" id="anneesExp"></div>
+            <p>ans d'expérience</p>
+          </div>
 
-        <!-- contact -->
-        <section class="container-fluid p-5 d-flex flex-column vh-100" id="contact">
+          <div class="col-md-4">
+            <div class="number m-2" id="anneeEtudes"></div>
+            <p>niveau BAC +</p>
+          </div>
 
-            <h2 class="blueText">
-                &lt; contact />
-            </h2>
+          <div class="col-md-4">
+            <div class="number m-2" id="technologies"></div>
+            <p>technologies maîtrisées</p>
+          </div>
+        </div>
+      </div>
 
-            <div class="row d-flex animate-on-scroll" id="textesContactRow">
-                <div class="blueText text-left ps-5 py-3 col-sm-9 offset-sm-3 col-md-6 offset-md-6 col-lg-5 offset-lg-7 col-xl-4 offset-xl-8 text-white"
-                    id="textesContact">
+      <!-- parcours-->
+      <section class="container py-5 text-center" id="parcours">
+        <h2 class="blueText my-5">&lt; parcours /></h2>
 
-                    <div class="row my-3">
-                        <div class="col-sm-3 mb-3">
-                            <i class="fa-solid fa-2x fa-phone"></i>
-                        </div>
-                        <div class="col-sm-9">
-                            06 30 47 86 13
-                        </div>
-                    </div>
+        <div class="row my-5 d-flex align-items-center">
+          <div class="col-md-6 mb-4 mb-md-0">
+            <img src="./images/logo_arinfo.png" alt="logo arinfo" />
+          </div>
+          <div class="col-md-6">
+            <div class="blueBackground rounded-5 p-4 fs-5">
+              <p class="dates">depuis fin 2020</p>
+              <p class="fs-3">
+                FORMATEUR EN DEVELOPPEMENT WEB (BAC +2) ET CDA (BAC +4)
+              </p>
+              <p>Centre de formation Arinfo (Niort)</p>
+              <p>
+                PHP (Laravel) / JavaScript (Vue JS, React Native) / HTML-CSS
+                (SASS, Bootstrap) / MySQL
+              </p>
+            </div>
+          </div>
+        </div>
 
-                    <div class="row my-3">
-                        <div class="col-sm-3 mb-3">
-                            <a href="mailto:hugo.virot@gmail.com"><i
-                                    class="fa-solid fa-2x fa-at contactLink"></i></a>
-                        </div>
-                        <div class="col-sm-9">
-                            <p>hugo.virot@gmail.com</p>
-                        </div>
-                    </div>
+        <div class="row my-5 d-flex align-items-center">
+          <div class="col-md-6">
+            <div class="blueBackground rounded-5 p-4 fs-5">
+              <p class="dates">2022-2023</p>
+              <p class="fs-3">
+                TITRE PRO CONCEPTEUR DÉVELOPPEUR D'APPLICATIONS (BAC +4 /
+                candidat libre)
+              </p>
+              <p>
+                Création d'une application web multicouches (API Laravel +
+                front-end Vue JS)
+              </p>
+              <p>
+                PHP (Laravel) / JavaScript (Vue JS) / HTML/CSS (Bootstrap) /
+                MySQL
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 order-first order-md-last mb-4 mb-md-0">
+            <img src="./images/rncp.png" alt="badge rncp" class="w-25" />
+          </div>
+        </div>
 
-                    <div class="row my-3">
-                        <div class="col-sm-3 mb-3">
-                            <a href="https://linkedin.com/in/hugovirot">
-                                <i class="fa-brands fa-2x fa-linkedin contactLink"></i>
-                            </a>
-                        </div>
-                        <div class="col-sm-9">
-                            <p>linkedin.com/in/hugovirot
-                            </p>
-                        </div>
-                    </div>
+        <div class="row my-5 d-flex align-items-center mb-4 mb-md-0">
+          <div class="col-md-6 mb-4 mb-md-0">
+            <img
+              src="./images/Logo_enedis.png"
+              alt="logo Enedis"
+              class="w-50"
+            />
+          </div>
+          <div class="col-md-6">
+            <div class="blueBackground rounded-5 p-4 fs-5">
+              <p class="dates">2019 - 2020</p>
+              <p class="fs-3">DÉVELOPPEUR WEB EN ALTERNANCE CHEZ ENEDIS</p>
+              <p>
+                application interne de traitement de données, déploiement
+                national
+              </p>
+              <p>
+                PHP (Code Igniter) / JavaScript (librairies DataTables, ChartJS)
+                / HTML/CSS (Bootstrap) / MySQL
+              </p>
+            </div>
+          </div>
+        </div>
 
-                    <div class="row my-3">
-                        <div class="col-sm-3 mb-3">
-                            <a href="https://github.com/HugoVirot"><i
-                                    class="fa-brands fa-2x fa-github contactLink"></i></a>
-                        </div>
-                        <div class="col-sm-9">
-                            <p>github.com/HugoVirot</p>
-                        </div>
-                    </div>
+        <div class="row my-5 d-flex align-items-center">
+          <div class="col-md-6">
+            <div class="blueBackground rounded-5 p-4 fs-5">
+              <p class="dates">2019-2020</p>
+              <p class="fs-3">TITRE PRO DÉVELOPPEUR WEB (BAC+2)</p>
+              <p>Le Campus Numérique (Valence)</p>
+              <p>
+                formation full-stack : PHP (Laravel) / JavaScript (Vue JS /
+                React Native) / HTML-CSS (Bootstrap) / MySQL
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 order-first order-md-last mb-4 mb-md-0">
+            <img src="./images/logo_campus.png" alt="logo campus numérique" />
+          </div>
+        </div>
 
+        <a href="#contact" class="btn mx-auto">Contact</a>
+      </section>
+
+      <!-- compétences-->
+      <section
+        class="container-fluid p-5 blueBackground text-center"
+        id="competences"
+      >
+        <h2>&lt; compétences /></h2>
+
+        <p class="fs-5 my-5 animate-on-scroll">
+          <i class="fa-solid fa-2x fa-quote-left me-2"></i>
+          J'ai un profil full-stack : je suis polyvalent et j'aime ça !
+          <i class="fa-solid fa-2x fa-quote-right ms-2"></i>
+        </p>
+
+        <div class="row">
+          <div class="col-md-4 mt-5 mt-md-0 animate-on-scroll">
+            <i class="fa-solid fa-4x fa-code"></i>
+            <h3 class="my-3">front-end</h3>
+            <p>
+              sites vitrines HTML/CSS, applis web JavaScript (Vue / React),
+              applis mobile (React Native)
+            </p>
+          </div>
+          <div class="col-md-4 mt-5 mt-md-0 animate-on-scroll">
+            <i class="fa-solid fa-4x fa-database"></i>
+            <h3 class="my-3">back-end</h3>
+            <p>
+              sites dynamiques et API PHP/Laravel avec bases de données MySQL
+            </p>
+          </div>
+          <div class="col-md-4 mt-5 mt-md-0 animate-on-scroll">
+            <i class="fa-solid fa-4x fa-list-check"></i>
+            <h3 class="my-3">Gestion de projet</h3>
+            <p>
+              Méthode Agile (Scrum, Kanban, Prince2), cahier des charges et
+              dossiers de conception, diagramme de Gantt
+            </p>
+          </div>
+          <div class="col-md-4 mt-5 animate-on-scroll">
+            <i class="fa-solid fa-4x fa-pencil"></i>
+            <h3 class="my-3">design</h3>
+            <p>
+              Maquettage / charte graphique / UI - UX (interface / expérience
+              utilisateur)
+            </p>
+          </div>
+          <div class="col-md-4 mt-5 animate-on-scroll">
+            <i class="fa-solid fa-4x fa-graduation-cap"></i>
+            <h3 class="my-3">transmission de connaissances</h3>
+            <p>37 élèves formés, du BAC+2 au BAC+4 (92% de réussite)</p>
+          </div>
+          <div class="col-md-4 mt-5 animate-on-scroll">
+            <i class="fa-solid fa-4x fa-flag-usa"></i>
+            <h3 class="my-3">Maîtrise de l'anglais</h3>
+            <p>
+              Niveau avancé, équivalent C1 (très bonne compréhension /
+              expression à l'écrit et à l'oral)
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- projets-->
+      <section
+        class="container-fluid p-5 d-flex align-items-center justify-content-center"
+        id="projets"
+      >
+        <h2>&lt; projets /></h2>
+      </section>
+
+      <section
+        class="container-fluid bg-white mt-3 p-2 p-md-5"
+        id="aperçusProjets"
+      >
+        <div class="row">
+          <!-- image projet 1 -->
+          <div class="col-md-6 col-lg-4 text-center mb-4">
+            <a
+              role="button"
+              data-bs-toggle="modal"
+              data-bs-target="#modalProjet1"
+            >
+              <img
+                src="./images/captures_sliders/sportetfoi1.PNG"
+                alt="capture accueil site Sport&Foi Valence"
+              />
+            </a>
+          </div>
+
+          <!-- Modal projet 1 -->
+          <div
+            class="modal fade"
+            id="modalProjet1"
+            tabindex="-1"
+            aria-labelledby="labelModalProjet1"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-fullscreen">
+              <div class="modal-content blueBackground">
+                <div class="modal-header">
+                  <h1
+                    class="modal-title mx-auto text-center"
+                    id="labelModalProjet1"
+                  >
+                    Sport et Foi Valence
+                  </h1>
                 </div>
+
+                <div
+                  class="modal-body p-3 p-md-5 mt-lg-2 d-flex align-items-center"
+                >
+                  <div class="row">
+                    <div class="col-lg-8 mt-lg-2">
+                      <div
+                        id="carouselProjet1"
+                        class="carousel slide container mt-lg-2 mb-3"
+                      >
+                        <div class="carousel-indicators">
+                          <button
+                            type="button"
+                            data-bs-target="#carouselProjet1"
+                            data-bs-slide-to="0"
+                            class="active"
+                            aria-current="true"
+                            aria-label="Slide 1"
+                          ></button>
+                          <button
+                            type="button"
+                            data-bs-target="#carouselProjet1"
+                            data-bs-slide-to="1"
+                            aria-label="Slide 2"
+                          ></button>
+                          <button
+                            type="button"
+                            data-bs-target="#carouselProjet1"
+                            data-bs-slide-to="2"
+                            aria-label="Slide 3"
+                          ></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img
+                              src="./images/captures_sliders/sportetfoi1.PNG"
+                              class="d-block w-100"
+                              alt="capture accueil site Sport&Foi Valence"
+                            />
+                          </div>
+                          <div class="carousel-item">
+                            <img
+                              src="./images/captures_sliders/sportetfoi2.PNG"
+                              class="d-block w-100"
+                              alt="capture rubrique inscription site Sport&Foi Valence"
+                            />
+                          </div>
+                          <div class="carousel-item">
+                            <img
+                              src="./images/captures_sliders/sportetfoi3.PNG"
+                              class="d-block w-100"
+                              alt="capture rubrique sections site Sport&Foi Valence"
+                            />
+                          </div>
+                        </div>
+                        <button
+                          class="carousel-control-prev"
+                          type="button"
+                          data-bs-target="#carouselProjet1"
+                          data-bs-slide="prev"
+                        >
+                          <span
+                            class="carousel-control-prev-icon"
+                            aria-hidden="true"
+                          ></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button
+                          class="carousel-control-next"
+                          type="button"
+                          data-bs-target="#carouselProjet1"
+                          data-bs-slide="next"
+                        >
+                          <span
+                            class="carousel-control-next-icon"
+                            aria-hidden="true"
+                          ></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                    </div>
+
+                    <div
+                      class="col-lg-4 d-flex flex-column justify-content-around"
+                    >
+                      <div>
+                        <h2>Le projet</h2>
+                        <ul>
+                          <li>Site réalisé pour une association sportive</li>
+                          <li>
+                            site statique en HTML / CSS / Bootstrap : suffisant
+                            pour le projet, chargement plus rapide
+                          </li>
+                          <li>
+                            Nombreuses pages : accueil, une page par section
+                            sportive, historique, téléchargements, etc
+                          </li>
+                          <li>
+                            mises à jour régulières (ajout d'actualités +
+                            modifications code)
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div>
+                        <h2>Dates</h2>
+                        <p>janvier 2021 - présent</p>
+                      </div>
+
+                      <div>
+                        <h2>Technos utilisées</h2>
+                        <div
+                          class="d-flex justify-content-around flex-wrap px-4"
+                        >
+                          <i class="fa-brands fa-3x fa-html5"></i>
+                          <i class="fa-brands fa-3x fa-css3-alt"></i>
+                          <i class="fa-brands fa-3x fa-bootstrap"></i>
+                          <i class="fa-brands fa-3x fa-square-git"></i>
+                          <i class="fa-brands fa-3x fa-github"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="modal-footer text-center">
+                  <div class="mx-auto">
+                    <a
+                      href="https://www.sportetfoivalence.fr"
+                      target="_blank"
+                      class="btn btn-lg btn-light mx-auto"
+                      >visiter le site
+                    </a>
+                    <button
+                      type="button"
+                      class="btn btn-lg btn-light mx-auto mt-3 mt-sm-0"
+                      data-bs-dismiss="modal"
+                    >
+                      retour
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- image projet 2 -->
+          <div class="col-md-6 col-lg-4 text-center mb-4">
+            <a
+              role="button"
+              data-bs-toggle="modal"
+              data-bs-target="#modalProjet2"
+            >
+              <img
+                src="./images/niceplaces.PNG"
+                alt="capture accueil site Nice Places"
+              />
+            </a>
+          </div>
+
+          <!-- Modal projet 2 -->
+          <div
+            class="modal fade"
+            id="modalProjet2"
+            tabindex="-1"
+            aria-labelledby="labelModalProjet2"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-fullscreen">
+              <div class="modal-content blueBackground">
+                <div class="modal-header">
+                  <h1
+                    class="modal-title mx-auto text-center"
+                    id="labelModalProjet2"
+                  >
+                    Nice Places
+                  </h1>
+                </div>
+
+                <div class="modal-body p-3 p-md-5 d-flex align-items-around">
+                  <div class="row">
+                    <div class="col-lg-8 mt-lg-2">
+                      <div
+                        id="carouselProjet2"
+                        class="carousel slide container mt-4 mt-lg-2 mb-3"
+                      >
+                        <div class="carousel-indicators">
+                          <button
+                            type="button"
+                            data-bs-target="#carouselProjet2"
+                            data-bs-slide-to="0"
+                            class="active"
+                            aria-current="true"
+                            aria-label="Slide 1"
+                          ></button>
+                          <button
+                            type="button"
+                            data-bs-target="#carouselProjet2"
+                            data-bs-slide-to="1"
+                            aria-label="Slide 2"
+                          ></button>
+                          <button
+                            type="button"
+                            data-bs-target="#carouselProjet2"
+                            data-bs-slide-to="2"
+                            aria-label="Slide 3"
+                          ></button>
+                          <button
+                            type="button"
+                            data-bs-target="#carouselProjet2"
+                            data-bs-slide-to="3"
+                            aria-label="Slide 4"
+                          ></button>
+                          <button
+                            type="button"
+                            data-bs-target="#carouselProjet2"
+                            data-bs-slide-to="4"
+                            aria-label="Slide 5"
+                          ></button>
+                          <button
+                            type="button"
+                            data-bs-target="#carouselProjet2"
+                            data-bs-slide-to="5"
+                            aria-label="Slide 6"
+                          ></button>
+                          <button
+                            type="button"
+                            data-bs-target="#carouselProjet2"
+                            data-bs-slide-to="6"
+                            aria-label="Slide 7"
+                          ></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img
+                              src="./images/niceplaces.PNG"
+                              class="d-block w-100"
+                              alt="capture accueil site Nice Places"
+                            />
+                          </div>
+                          <div class="carousel-item">
+                            <img
+                              src="./images/captures_sliders/niceplaces2.PNG"
+                              class="d-block w-100"
+                              alt="capture accueil site Nice Places"
+                            />
+                          </div>
+                          <div class="carousel-item">
+                            <img
+                              src="./images/captures_sliders/niceplaces3.PNG"
+                              class="d-block w-100"
+                              alt="capture page catégories site Nice Places"
+                            />
+                          </div>
+                          <div class="carousel-item">
+                            <img
+                              src="./images/captures_sliders/niceplaces4.PNG"
+                              class="d-block w-100"
+                              alt="capture page création lieu site Nice Places"
+                            />
+                          </div>
+                          <div class="carousel-item">
+                            <img
+                              src="./images/captures_sliders/niceplaces5.PNG"
+                              class="d-block w-100"
+                              alt="capture page proposer image site Nice Places"
+                            />
+                          </div>
+                          <div class="carousel-item">
+                            <img
+                              src="./images/captures_sliders/niceplaces6.PNG"
+                              class="d-block w-100"
+                              alt="capture page lieu Nice Places"
+                            />
+                          </div>
+                          <div class="carousel-item">
+                            <img
+                              src="./images/captures_sliders/niceplaces7.PNG"
+                              class="d-block w-100"
+                              alt="capture page carte site Nice Places"
+                            />
+                          </div>
+                        </div>
+                        <button
+                          class="carousel-control-prev"
+                          type="button"
+                          data-bs-target="#carouselProjet2"
+                          data-bs-slide="prev"
+                        >
+                          <span
+                            class="carousel-control-prev-icon"
+                            aria-hidden="true"
+                          ></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button
+                          class="carousel-control-next"
+                          type="button"
+                          data-bs-target="#carouselProjet2"
+                          data-bs-slide="next"
+                        >
+                          <span
+                            class="carousel-control-next-icon"
+                            aria-hidden="true"
+                          ></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                    </div>
+
+                    <div
+                      class="col-lg-4 d-flex flex-column justify-content-around"
+                    >
+                      <div>
+                        <h2>Le projet</h2>
+                        <ul>
+                          <li>
+                            Site dynamique réalisé pour mon Titre Professionnel
+                            CDA
+                          </li>
+                          <li>
+                            Partage de sorties nature avec carte interactive
+                          </li>
+                          <li>
+                            application multicouche PHP / JavaScript : API
+                            Laravel et front-end Vue JS
+                          </li>
+                          <li>Base de données MySQL</li>
+                          <li>
+                            Nombreuses fonctionnalités : inscription et
+                            connexion, création de lieu avec upload d'image,
+                            système de favoris, notifications, back-office
+                            admin, etc
+                          </li>
+                          <li>
+                            Temps de travail total (dossiers de conception et
+                            cahier des charges inclus) : environ 500 heures
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div>
+                        <h2>Dates</h2>
+                        <p>janvier 2022 - avril 2023</p>
+                      </div>
+
+                      <div>
+                        <h2>Technos utilisées</h2>
+                        <div
+                          class="d-flex justify-content-around flex-wrap px-4"
+                        >
+                          <i class="fa-brands fa-3x fa-html5"></i>
+                          <i class="fa-brands fa-3x fa-css3-alt"></i>
+                          <i class="fa-brands fa-3x fa-bootstrap"></i>
+                          <i class="fa-brands fa-3x fa-square-js"></i>
+                          <i class="fa-brands fa-3x fa-vuejs"></i>
+                          <i class="fa-brands fa-3x fa-php"></i>
+                          <i class="fa-brands fa-3x fa-laravel"></i>
+                          <img
+                            src="./images/mysql.png"
+                            class="mysql"
+                            alt="logo mysql"
+                          />
+                          <i class="fa-brands fa-3x fa-square-git"></i>
+                          <i class="fa-brands fa-3x fa-github"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer text-center">
+                  <div class="mx-auto">
+                    <p>
+                      NB : le site peut être temporairement inaccessible
+                      (changement d'hébergeur en cours). Revenez prochainement
+                      si le lien ne fonctionne pas.
+                    </p>
+                    <a
+                      href="https://www.nice-places.fr"
+                      target="_blank"
+                      class="btn btn-lg btn-light mx-auto"
+                      >visiter le site
+                    </a>
+                    <button
+                      type="button"
+                      class="btn btn-lg btn-light mx-auto mt-3 mt-sm-0"
+                      data-bs-dismiss="modal"
+                    >
+                      retour
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- image projet 3 -->
+          <div class="col-md-6 col-lg-4 text-center mb-4">
+            <a
+              role="button"
+              data-bs-toggle="modal"
+              data-bs-target="#modalProjet3"
+            >
+              <img
+                src="./images/portfolio.PNG"
+                alt="capture accueil Portfolio"
+              />
+            </a>
+          </div>
+
+          <!-- Modal projet 3 -->
+          <div
+            class="modal fade"
+            id="modalProjet3"
+            tabindex="-1"
+            aria-labelledby="labelModalProjet3"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-fullscreen">
+              <div class="modal-content blueBackground">
+                <div class="modal-header">
+                  <h1
+                    class="modal-title mx-auto text-center"
+                    id="labelModalProjet3"
+                  >
+                    Portfolio 2024
+                  </h1>
+                </div>
+
+                <div class="modal-body p-3 p-md-5 d-flex align-items-around">
+                  <div class="row">
+                    <div class="col-lg-8 mt-lg-2">
+                      <div
+                        id="carouselProjet3"
+                        class="carousel slide container mt-4 mt-lg-2 mb-3"
+                      >
+                        <div class="carousel-indicators">
+                          <button
+                            type="button"
+                            data-bs-target="#carouselProjet3"
+                            data-bs-slide-to="0"
+                            class="active"
+                            aria-current="true"
+                            aria-label="Slide 1"
+                          ></button>
+                          <button
+                            type="button"
+                            data-bs-target="#carouselProjet3"
+                            data-bs-slide-to="1"
+                            aria-label="Slide 2"
+                          ></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img
+                              src="./images/portfolio.PNG"
+                              class="d-block w-100"
+                              alt="capture accueil Portfolio"
+                            />
+                          </div>
+                          <div class="carousel-item">
+                            <img
+                              src="./images/captures_sliders/ancienportfolio.png"
+                              class="d-block w-100"
+                              alt="capture accueil ancien Portfolio"
+                            />
+                          </div>
+                        </div>
+                        <button
+                          class="carousel-control-prev"
+                          type="button"
+                          data-bs-target="#carouselProjet3"
+                          data-bs-slide="prev"
+                        >
+                          <span
+                            class="carousel-control-prev-icon"
+                            aria-hidden="true"
+                          ></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button
+                          class="carousel-control-next"
+                          type="button"
+                          data-bs-target="#carouselProjet3"
+                          data-bs-slide="next"
+                        >
+                          <span
+                            class="carousel-control-next-icon"
+                            aria-hidden="true"
+                          ></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                    </div>
+
+                    <div
+                      class="col-lg-4 d-flex flex-column justify-content-around"
+                    >
+                      <div>
+                        <h2>Le projet</h2>
+                        <ul>
+                          <li>Nouveau portfolio pour me présenter</li>
+                          <li>
+                            Objectifs : me faire connaître de façon moderne et
+                            lisible
+                          </li>
+                          <li>
+                            Site statique en HTML / CSS (SASS) / Bootstrap
+                          </li>
+                          <li>
+                            Utilisation de JavaScript et CSS pour les animations
+                          </li>
+                          <li>
+                            Remplace le précédent (seconde capture du carousel)
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div>
+                        <h2>Dates</h2>
+                        <p>novembre 2023 - mars 2024</p>
+                      </div>
+
+                      <div>
+                        <h2>Technos utilisées</h2>
+                        <div
+                          class="d-flex justify-content-around flex-wrap px-4"
+                        >
+                          <i class="fa-brands fa-3x fa-html5"></i>
+                          <i class="fa-brands fa-3x fa-css3-alt"></i>
+                          <i class="fa-brands fa-3x fa-sass"></i>
+                          <i class="fa-brands fa-3x fa-bootstrap"></i>
+                          <i class="fa-brands fa-3x fa-square-js"></i>
+                          <i class="fa-brands fa-3x fa-square-git"></i>
+                          <i class="fa-brands fa-3x fa-github"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="modal-footer text-center">
+                  <div class="mx-auto">
+                    <button
+                      type="button"
+                      class="btn btn-lg btn-light mx-auto px-5"
+                      data-bs-dismiss="modal"
+                    >
+                      retour
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- image projet 4 -->
+          <div class="col-md-6 col-lg-4 text-center mb-4">
+            <a
+              role="button"
+              data-bs-toggle="modal"
+              data-bs-target="#modalProjet4"
+            >
+              <img
+                src="./images/piloter.PNG"
+                alt="capture accueil site Pilot'ER"
+              />
+            </a>
+          </div>
+
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="modalProjet4"
+            tabindex="-1"
+            aria-labelledby="labelModalProjet4"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-fullscreen">
+              <div class="modal-content blueBackground">
+                <div class="modal-header">
+                  <h1
+                    class="modal-title mx-auto text-center"
+                    id="labelModalProjet4"
+                  >
+                    Pilot'ER
+                  </h1>
+                </div>
+
+                <div
+                  class="modal-body p-3 p-md-5 d-flex mt-lg-2 align-items-around"
+                >
+                  <div class="row">
+                    <div class="col-lg-8 mt-lg-2">
+                      <div
+                        id="carouselProjet4"
+                        class="carousel slide mt-4 mt-lg-2 container mb-3"
+                      >
+                        <div class="carousel-indicators">
+                          <button
+                            type="button"
+                            data-bs-target="#carouselProjet4"
+                            data-bs-slide-to="0"
+                            class="active"
+                            aria-current="true"
+                            aria-label="Slide 1"
+                          ></button>
+                          <button
+                            type="button"
+                            data-bs-target="#carouselProjet4"
+                            data-bs-slide-to="1"
+                            aria-label="Slide 2"
+                          ></button>
+                          <button
+                            type="button"
+                            data-bs-target="#carouselProjet4"
+                            data-bs-slide-to="2"
+                            aria-label="Slide 3"
+                          ></button>
+                          <button
+                            type="button"
+                            data-bs-target="#carouselProjet4"
+                            data-bs-slide-to="3"
+                            aria-label="Slide 4"
+                          ></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img
+                              src="./images/piloter.PNG"
+                              class="d-block w-100"
+                              alt="capture accueil site Pilot'ER"
+                            />
+                          </div>
+                          <div class="carousel-item">
+                            <img
+                              src="./images/captures_sliders/piloter2.PNG"
+                              class="d-block w-100"
+                              alt="capture page CPA site Pilot'ER"
+                            />
+                          </div>
+                          <div class="carousel-item">
+                            <img
+                              src="./images/captures_sliders/piloter3.PNG"
+                              class="d-block w-100"
+                              alt="capture page tableau site Pilot'ER"
+                            />
+                          </div>
+                          <div class="carousel-item">
+                            <img
+                              src="./images/captures_sliders/piloter4.PNG"
+                              class="d-block w-100"
+                              alt="capture page statistiques site Pilot'ER"
+                            />
+                          </div>
+                        </div>
+                        <button
+                          class="carousel-control-prev"
+                          type="button"
+                          data-bs-target="#carouselProjet4"
+                          data-bs-slide="prev"
+                        >
+                          <span
+                            class="carousel-control-prev-icon"
+                            aria-hidden="true"
+                          ></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button
+                          class="carousel-control-next"
+                          type="button"
+                          data-bs-target="#carouselProjet4"
+                          data-bs-slide="next"
+                        >
+                          <span
+                            class="carousel-control-next-icon"
+                            aria-hidden="true"
+                          ></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                    </div>
+
+                    <div
+                      class="col-lg-4 d-flex flex-column justify-content-around"
+                    >
+                      <div>
+                        <h2>Le projet</h2>
+                        <ul>
+                          <li>Application interne de traitement de données</li>
+                          <li>
+                            Projet réalisé lors de mon alternance chez Enedis
+                            Valence
+                          </li>
+                          <li>
+                            Analyse des fichiers Excel d'environ 40 colonnes et
+                            20 000 lignes, compare avec les données stockées en
+                            base, et réalise les insertions / modifications
+                            nécessaires
+                          </li>
+                          <li>
+                            Affichage de données et statistiques dans des
+                            tableaux (plusieurs dizaines) ou via des graphiques
+                            (idem)
+                          </li>
+                          <li>
+                            Framework PHP (CodeIgniter) + base de données MySQL
+                            + HTML/CSS/Bootstrap pour l'affichage + librairies
+                            JS pour les tableaux (DataTables) et les
+                            statistiques (ChartJS)
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div>
+                        <h2>Dates</h2>
+                        <p>juin 2019 - juin 2020</p>
+                      </div>
+
+                      <div>
+                        <h2>Technos utilisées</h2>
+                        <div
+                          class="d-flex justify-content-around flex-wrap px-4"
+                        >
+                          <i class="fa-brands fa-3x fa-html5"></i>
+                          <i class="fa-brands fa-3x fa-css3-alt"></i>
+                          <i class="fa-brands fa-3x fa-bootstrap"></i>
+                          <i class="fa-brands fa-3x fa-square-js"></i>
+                          <i class="fa-brands fa-3x fa-php"></i>
+                          <i class="fa-brands fa-3x fa-square-git"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="modal-footer text-center">
+                  <button
+                    type="button"
+                    class="btn btn-lg btn-light mx-auto px-5"
+                    data-bs-dismiss="modal"
+                  >
+                    retour
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- image projet 5 -->
+          <div class="col-md-6 col-lg-4 text-center mb-4">
+            <a
+              role="button"
+              data-bs-toggle="modal"
+              data-bs-target="#modalProjet5"
+            >
+              <img
+                src="./images/madagascartsboutique.PNG"
+                alt="capture accueil site Madagasc'arts Boutique"
+              />
+            </a>
+          </div>
+
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="modalProjet5"
+            tabindex="-1"
+            aria-labelledby="labelModalProjet5"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-fullscreen">
+              <div class="modal-content blueBackground">
+                <div class="modal-header">
+                  <h1
+                    class="modal-title mx-auto text-center"
+                    id="labelModalProjet5"
+                  >
+                    Madagasc'arts Boutique
+                  </h1>
+                </div>
+
+                <div
+                  class="modal-body p-3 p-md-5 d-flex mt-lg-2 align-items-around"
+                >
+                  <div class="row">
+                    <div class="col-lg-8 mt-lg-2">
+                      <div
+                        id="carouselProjet5"
+                        class="carousel slide mt-4 mt-lg-2 container mb-3"
+                      >
+                        <div class="carousel-indicators">
+                          <button
+                            type="button"
+                            data-bs-target="#carouselProjet5"
+                            data-bs-slide-to="0"
+                            class="active"
+                            aria-current="true"
+                            aria-label="Slide 1"
+                          ></button>
+                          <button
+                            type="button"
+                            data-bs-target="#carouselProjet5"
+                            data-bs-slide-to="1"
+                            aria-label="Slide 2"
+                          ></button>
+                          <button
+                            type="button"
+                            data-bs-target="#carouselProjet5"
+                            data-bs-slide-to="2"
+                            aria-label="Slide 3"
+                          ></button>
+                          <button
+                            type="button"
+                            data-bs-target="#carouselProjet5"
+                            data-bs-slide-to="3"
+                            aria-label="Slide 4"
+                          ></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img
+                              src="./images/madagascartsboutique.PNG"
+                              class="d-block w-100"
+                              alt="capture accueil site Madagasc'arts Boutique"
+                            />
+                          </div>
+                          <div class="carousel-item">
+                            <img
+                              src="./images/captures_sliders/mada2.png"
+                              class="d-block w-100"
+                              alt="capture section produits stars site Madagasc'arts Boutique"
+                            />
+                          </div>
+                          <div class="carousel-item">
+                            <img
+                              src="./images/captures_sliders/mada3.png"
+                              class="d-block w-100"
+                              alt="capture section boutique site Madagasc'arts Boutique"
+                            />
+                          </div>
+                          <div class="carousel-item">
+                            <img
+                              src="./images/captures_sliders/mada4.png"
+                              class="d-block w-100"
+                              alt="capture section contact site Madagasc'arts Boutique"
+                            />
+                          </div>
+                        </div>
+                        <button
+                          class="carousel-control-prev"
+                          type="button"
+                          data-bs-target="#carouselProjet5"
+                          data-bs-slide="prev"
+                        >
+                          <span
+                            class="carousel-control-prev-icon"
+                            aria-hidden="true"
+                          ></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button
+                          class="carousel-control-next"
+                          type="button"
+                          data-bs-target="#carouselProjet5"
+                          data-bs-slide="next"
+                        >
+                          <span
+                            class="carousel-control-next-icon"
+                            aria-hidden="true"
+                          ></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                    </div>
+
+                    <div
+                      class="col-lg-4 d-flex flex-column justify-content-around"
+                    >
+                      <div>
+                        <h2>Le projet</h2>
+                        <ul>
+                          <li>
+                            Site vitrine réalisé pour une commerçante présente
+                            sur des marchés
+                          </li>
+                          <li>
+                            Présente le commerce et les articles vendus
+                            (artisanat et épices)
+                          </li>
+                          <li>Site statique HTML / CSS / Bootstrap</li>
+                        </ul>
+                      </div>
+
+                      <div>
+                        <h2>Dates</h2>
+                        <p>janvier 2022 - mis à jour en février / mars 2024</p>
+                      </div>
+
+                      <div>
+                        <h2>Technos utilisées</h2>
+                        <div
+                          class="d-flex justify-content-around flex-wrap px-4"
+                        >
+                          <i class="fa-brands fa-3x fa-html5"></i>
+                          <i class="fa-brands fa-3x fa-css3-alt"></i>
+                          <i class="fa-brands fa-3x fa-sass"></i>
+                          <i class="fa-brands fa-3x fa-bootstrap"></i>
+                          <i class="fa-brands fa-3x fa-square-git"></i>
+                          <i class="fa-brands fa-3x fa-github"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="modal-footer text-center">
+                  <div class="mx-auto">
+                    <a
+                      href="https://www.madagascarts-boutique.com"
+                      target="_blank"
+                      class="btn btn-lg btn-light mx-auto"
+                      >visiter le site
+                    </a>
+                    <button
+                      type="button"
+                      class="btn btn-lg btn-light mx-auto mt-3 mt-sm-0"
+                      data-bs-dismiss="modal"
+                    >
+                      retour
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- image projet 6 -->
+          <div class="col-md-6 col-lg-4 text-center mb-4">
+            <a
+              role="button"
+              data-bs-toggle="modal"
+              data-bs-target="#modalProjet6"
+            >
+              <img
+                src="./images/laravelonlinestore.PNG"
+                alt="capture accueil site Laravel Online Store"
+              />
+            </a>
+          </div>
+
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="modalProjet6"
+            tabindex="-1"
+            aria-labelledby="labelModalProjet6"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-fullscreen">
+              <div class="modal-content blueBackground">
+                <div class="modal-header">
+                  <h1
+                    class="modal-title mx-auto text-center"
+                    id="labelModalProjet6"
+                  >
+                    Laravel Online Store
+                  </h1>
+                </div>
+
+                <div
+                  class="modal-body p-3 p-md-5 d-flex mt-4 mt-lg-2 align-items-around"
+                >
+                  <div class="row">
+                    <div class="col-lg-8 mt-lg-2">
+                      <div
+                        id="carouselProjet6"
+                        class="carousel slide mt-lg-2 container mb-3"
+                      >
+                        <div class="carousel-indicators">
+                          <button
+                            type="button"
+                            data-bs-target="#carouselProjet6"
+                            data-bs-slide-to="0"
+                            class="active"
+                            aria-current="true"
+                            aria-label="Slide 1"
+                          ></button>
+                          <button
+                            type="button"
+                            data-bs-target="#carouselProjet6"
+                            data-bs-slide-to="1"
+                            aria-label="Slide 2"
+                          ></button>
+                          <button
+                            type="button"
+                            data-bs-target="#carouselProjet6"
+                            data-bs-slide-to="2"
+                            aria-label="Slide 3"
+                          ></button>
+                          <button
+                            type="button"
+                            data-bs-target="#carouselProjet6"
+                            data-bs-slide-to="3"
+                            aria-label="Slide 4"
+                          ></button>
+                          <button
+                            type="button"
+                            data-bs-target="#carouselProjet6"
+                            data-bs-slide-to="4"
+                            aria-label="Slide 5"
+                          ></button>
+                          <button
+                            type="button"
+                            data-bs-target="#carouselProjet6"
+                            data-bs-slide-to="5"
+                            aria-label="Slide 6"
+                          ></button>
+                          <button
+                            type="button"
+                            data-bs-target="#carouselProjet6"
+                            data-bs-slide-to="6"
+                            aria-label="Slide 7"
+                          ></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img
+                              src="./images/laravelonlinestore.PNG"
+                              class="d-block w-100"
+                              alt="capture accueil site Laravel Online Store"
+                            />
+                          </div>
+                          <div class="carousel-item">
+                            <img
+                              src="./images/captures_sliders/laravelonlinestore2.PNG"
+                              class="d-block w-100"
+                              alt="capture page catalogue site Laravel Online Store"
+                            />
+                          </div>
+                          <div class="carousel-item">
+                            <img
+                              src="./images/captures_sliders/laravelonlinestore3.PNG"
+                              class="d-block w-100"
+                              alt="capture page gammes site Laravel Online Store"
+                            />
+                          </div>
+                          <div class="carousel-item">
+                            <img
+                              src="./images/captures_sliders/laravelonlinestore4.PNG"
+                              class="d-block w-100"
+                              alt="capture page détails produit site Laravel Online Store"
+                            />
+                          </div>
+                          <div class="carousel-item">
+                            <img
+                              src="./images/captures_sliders/laravelonlinestore5.PNG"
+                              class="d-block w-100"
+                              alt="capture page panier Laravel Online Store"
+                            />
+                          </div>
+                          <div class="carousel-item">
+                            <img
+                              src="./images/captures_sliders/laravelonlinestore6.PNG"
+                              class="d-block w-100"
+                              alt="capture page mon compte Laravel Online Store"
+                            />
+                          </div>
+                          <div class="carousel-item">
+                            <img
+                              src="./images/captures_sliders/laravelonlinestore7.PNG"
+                              class="d-block w-100"
+                              alt="capture page validation commande Laravel Online Store"
+                            />
+                          </div>
+                        </div>
+                        <button
+                          class="carousel-control-prev"
+                          type="button"
+                          data-bs-target="#carouselProjet6"
+                          data-bs-slide="prev"
+                        >
+                          <span
+                            class="carousel-control-prev-icon"
+                            aria-hidden="true"
+                          ></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button
+                          class="carousel-control-next"
+                          type="button"
+                          data-bs-target="#carouselProjet6"
+                          data-bs-slide="next"
+                        >
+                          <span
+                            class="carousel-control-next-icon"
+                            aria-hidden="true"
+                          ></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                    </div>
+
+                    <div
+                      class="col-lg-4 d-flex flex-column justify-content-around"
+                    >
+                      <div>
+                        <h2>Le projet</h2>
+                        <ul>
+                          <li>
+                            Boutique en ligne fictive réalisée avec Laravel et
+                            MySQL (tourne en local)
+                          </li>
+                          <li>Thème : informatique / high-tech</li>
+                          <li>Correction d'un projet donné aux élèves</li>
+                          <li>
+                            Nombreuses fonctionnalités : inscription, connexion,
+                            ajout au panier, validation commande, modification
+                            des infos, etc
+                          </li>
+                          <li>
+                            Plusieurs mises à jour et améliorations apportées au
+                            fil du temps
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div>
+                        <h2>Dates</h2>
+                        <p>décembre 2020 - juillet 2023</p>
+                      </div>
+
+                      <div>
+                        <h2>Technos utilisées</h2>
+                        <div
+                          class="d-flex justify-content-around flex-wrap px-4"
+                        >
+                          <i class="fa-brands fa-3x fa-html5"></i>
+                          <i class="fa-brands fa-3x fa-css3-alt"></i>
+                          <i class="fa-brands fa-3x fa-sass"></i>
+                          <i class="fa-brands fa-3x fa-bootstrap"></i>
+                          <i class="fa-brands fa-3x fa-square-git"></i>
+                          <i class="fa-brands fa-3x fa-github"></i>
+                          <i class="fa-brands fa-3x fa-php"></i>
+                          <i class="fa-brands fa-3x fa-laravel"></i>
+                          <img
+                            src="./images/mysql.png"
+                            class="mysql"
+                            alt="logo mysql"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="modal-footer text-center">
+                  <button
+                    type="button"
+                    class="btn btn-lg btn-light mx-auto px-5"
+                    data-bs-dismiss="modal"
+                  >
+                    retour
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center mt-2 mt-md-3 mb-4 mb-md-2">
+          <a href="#contact" class="btn mx-auto">Contact</a>
+        </div>
+      </section>
+
+      <!-- technos grande image-->
+      <section class="container-fluid p-5 blueBackground" id="technos">
+        <h2 class="blueText">&lt; technologies /></h2>
+      </section>
+
+      <!-- technos logos-->
+      <div class="container-fluid p-5 bg-white" id="logosTechnos">
+        <div
+          class="d-flex justify-content-around flex-wrap blueText animate-on-scroll"
+        >
+          <i class="fa-brands fa-5x fa-html5"></i>
+          <i class="fa-brands fa-5x fa-css3-alt"></i>
+          <i class="fa-brands fa-5x fa-sass"></i>
+          <i class="fa-brands fa-5x fa-bootstrap"></i>
+          <i class="fa-brands fa-5x fa-square-js"></i>
+          <i class="fa-brands fa-5x fa-vuejs"></i>
+          <i class="fa-brands fa-5x fa-react"></i>
+          <i class="fa-brands fa-5x fa-php"></i>
+          <i class="fa-brands fa-5x fa-laravel"></i>
+          <img src="./images/mysql.png" id="mysql" alt="logo mysql" />
+          <i class="fa-brands fa-5x fa-wordpress"></i>
+          <i class="fa-brands fa-5x fa-java"></i>
+          <!-- <i class="fa-brands fa-3x  fa-docker"></i> -->
+          <i class="fa-brands fa-5x fa-square-git"></i>
+          <i class="fa-brands fa-5x fa-github"></i>
+        </div>
+      </div>
+
+      <!-- contact -->
+      <section
+        class="container-fluid p-5 d-flex flex-column vh-100"
+        id="contact"
+      >
+        <h2 class="blueText">&lt; contact /></h2>
+
+        <div class="row d-flex animate-on-scroll" id="textesContactRow">
+          <div
+            class="blueText text-left ps-5 py-3 col-sm-9 offset-sm-3 col-md-6 offset-md-6 col-lg-5 offset-lg-7 col-xl-4 offset-xl-8 text-white"
+            id="textesContact"
+          >
+            <div class="row my-3">
+              <div class="col-sm-3 mb-3">
+                <i class="fa-solid fa-2x fa-phone"></i>
+              </div>
+              <div class="col-sm-9">06 30 47 86 13</div>
             </div>
 
-        </section>
+            <div class="row my-3">
+              <div class="col-sm-3 mb-3">
+                <a href="mailto:hugo.virot@gmail.com"
+                  ><i class="fa-solid fa-2x fa-at contactLink"></i
+                ></a>
+              </div>
+              <div class="col-sm-9">
+                <p>hugo.virot@gmail.com</p>
+              </div>
+            </div>
 
+            <div class="row my-3">
+              <div class="col-sm-3 mb-3">
+                <a href="https://linkedin.com/in/hugovirot">
+                  <i class="fa-brands fa-2x fa-linkedin contactLink"></i>
+                </a>
+              </div>
+              <div class="col-sm-9">
+                <p>linkedin.com/in/hugovirot</p>
+              </div>
+            </div>
+
+            <div class="row my-3">
+              <div class="col-sm-3 mb-3">
+                <a href="https://github.com/HugoVirot"
+                  ><i class="fa-brands fa-2x fa-github contactLink"></i
+                ></a>
+              </div>
+              <div class="col-sm-9">
+                <p>github.com/HugoVirot</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="container-fluid blueBackground text-center p-5">
-        <p class="fs-2 animate-on-scroll ">Hugo Virot, Développeur Web</p>
-        <i class="fa-3x my-2 fa-solid fa-terminal animate-on-scroll"></i>
-        <div class="row mt-5 animate-on-scroll">
-            <ul class="col-md-8 offset-md-2 d-flex flex-column flex-md-row justify-content-evenly align-items-center">
-                <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="#">accueil</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#parcours">parcours</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#competences">compétences</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#projets">projets</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contact">contact</a>
-                </li>
-            </ul>
-        </div>
-        <p class="mt-5" id="copyright">© copyright 2023-2024 hugovirot.fr</p>
+      <p class="fs-2 animate-on-scroll">Hugo Virot, Développeur Web</p>
+      <i class="fa-3x my-2 fa-solid fa-terminal animate-on-scroll"></i>
+      <div class="row mt-5 animate-on-scroll">
+        <ul
+          class="col-md-8 offset-md-2 d-flex flex-column flex-md-row justify-content-evenly align-items-center"
+        >
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">accueil</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#parcours">parcours</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#competences">compétences</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projets">projets</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">contact</a>
+          </li>
+        </ul>
+      </div>
+      <p class="mt-5" id="copyright">© copyright 2023-2024 hugovirot.fr</p>
     </footer>
 
     <!-- lien JS de Bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
 
     <script>
-        // function that triggers the counts
-        function animateValue(obj, start, end, duration) {
-            let startTimestamp = null;
-            const step = (timestamp) => {
-                if (!startTimestamp) startTimestamp = timestamp;
-                const progress = Math.min((timestamp - startTimestamp) / duration, 1);
-                obj.innerHTML = Math.floor(progress * (end - start) + start);
-                if (progress < 1) {
-                    window.requestAnimationFrame(step);
-                }
-            };
+      // function that triggers the counts
+      function animateValue(obj, start, end, duration) {
+        let startTimestamp = null;
+        const step = (timestamp) => {
+          if (!startTimestamp) startTimestamp = timestamp;
+          const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+          obj.innerHTML = Math.floor(progress * (end - start) + start);
+          if (progress < 1) {
             window.requestAnimationFrame(step);
+          }
+        };
+        window.requestAnimationFrame(step);
+      }
+
+      // listener on scroll event
+      window.onscroll = function () {
+        if (window.scrollY > 600 && window.scrollY < 700) {
+          // one function call for every number to animate
+          const anneesExp = document.getElementById("anneesExp");
+          animateValue(anneesExp, 0, 5, 1500);
+
+          const anneeEtudes = document.getElementById("anneeEtudes");
+          animateValue(anneeEtudes, 0, 4, 1500);
+
+          const technos = document.getElementById("technologies");
+          animateValue(technos, 0, 14, 1500);
         }
+      };
 
-        // listener on scroll event
-        window.onscroll = function () {
-            if (window.scrollY > 600 && window.scrollY < 700) {
-                // one function call for every number to animate
-                const anneesExp = document.getElementById("anneesExp");
-                animateValue(anneesExp, 0, 5, 1500);
+      // Select all <a> elements inside the offcanvas
+      const links = document.querySelectorAll("nav a");
 
-                const anneeEtudes = document.getElementById("anneeEtudes");
-                animateValue(anneeEtudes, 0, 4, 1500);
+      // Function to close the offcanvas menu
+      function closeOffcanvas() {
+        const offcanvas = document.querySelector(".offcanvas");
+        const backdrop = document.querySelector(".offcanvas-backdrop");
+        offcanvas.classList.remove("show");
+        backdrop.classList.remove("show");
+      }
 
-                const technos = document.getElementById("technologies");
-                animateValue(technos, 0, 14, 1500);
-            }
-        }
+      // Add a click event listener to each <a> element
+      links.forEach(function (link) {
+        link.addEventListener("click", closeOffcanvas);
+      });
 
-        // Select all <a> elements inside the offcanvas
-        const links = document.querySelectorAll('nav a');
+      // Ceci est une fonction auto - exécutable.Les fonctions auto - exécutables
+      // sont des fonctions qui s'exécutent immédiatement après leur déclaration,
+      // sans avoir besoin d'être appelées.Les accolades immédiatement après la
+      // déclaration de la fonction et les parenthèses à la fin de la déclaration
+      // définissent la fonction et permettent de l'exécuter immédiatement.
+      (function () {
+        // Utilisation de la directive "use strict" pour activer le mode strict en JavaScript
+        // Cela implique une meilleure gestion des erreurs et une syntaxe plus stricte pour le code
+        "use strict";
 
-        // Function to close the offcanvas menu
-        function closeOffcanvas() {
-            const offcanvas = document.querySelector('.offcanvas');
-            const backdrop = document.querySelector('.offcanvas-backdrop');
-            offcanvas.classList.remove('show');
-            backdrop.classList.remove('show');
-        }
-
-        // Add a click event listener to each <a> element
-        links.forEach(function (link) {
-            link.addEventListener('click', closeOffcanvas);
-        });
-
-
-        // Ceci est une fonction auto - exécutable.Les fonctions auto - exécutables
-        // sont des fonctions qui s'exécutent immédiatement après leur déclaration,
-        // sans avoir besoin d'être appelées.Les accolades immédiatement après la 
-        // déclaration de la fonction et les parenthèses à la fin de la déclaration 
-        // définissent la fonction et permettent de l'exécuter immédiatement.
-        (function () {
-            // Utilisation de la directive "use strict" pour activer le mode strict en JavaScript
-            // Cela implique une meilleure gestion des erreurs et une syntaxe plus stricte pour le code
-            "use strict"
-
-            // Définir la fonction detectAndAnimate pour basculer la classe des éléments
-            const detectAndAnimate = () => {
-                // Sélectionner tous les éléments avec la classe 'animate-on-scroll'
-                const elements = document.querySelectorAll('.animate-on-scroll');
-                // Boucle sur tous les éléments sélectionnés
-                elements.forEach(element => {
-                    // Vérifier si l'élément est visible dans la fenêtre du navigateur
-                    const isVisible = isElementInViewport(element);
-                    // Ajouter ou supprimer la classe 'is-visible' en fonction de la visibilité de l'élément
-                    element.classList.toggle('is-visible', isVisible);
-                });
-            };
-            // Définir la fonction isElementInViewport pour vérifier la visibilité de l'élément dans la fenêtre du navigateur
-            const isElementInViewport = el => {
-                // Récupérer les dimensions de l'élément
-                const rect = el.getBoundingClientRect();
-                // Récupérer la hauteur de la fenêtre du navigateur
-                const viewportHeight = window.innerHeight || document.documentElement.clientHeight;
-                // Récupérer la largeur de la fenêtre du navigateur
-                const viewportWidth = window.innerWidth || document.documentElement.clientWidth;
-                // Retourner vrai si l'élément est entièrement visible dans la fenêtre du navigateur, sinon retourner faux
-                return (
-                    rect.top >= 0 &&
-                    rect.left >= 0 &&
-                    rect.bottom <= viewportHeight &&
-                    rect.right <= viewportWidth
-                );
-            };
-            // Écouter l'événement de défilement de la fenêtre du navigateur et appeler la fonction detectAndAnimate
-            window.addEventListener('scroll', detectAndAnimate);
-            // Appeler la fonction detectAndAnimate une fois au démarrage pour mettre à jour l'état des éléments
-            detectAndAnimate();
-        })()
+        // Définir la fonction detectAndAnimate pour basculer la classe des éléments
+        const detectAndAnimate = () => {
+          // Sélectionner tous les éléments avec la classe 'animate-on-scroll'
+          const elements = document.querySelectorAll(".animate-on-scroll");
+          // Boucle sur tous les éléments sélectionnés
+          elements.forEach((element) => {
+            // Vérifier si l'élément est visible dans la fenêtre du navigateur
+            const isVisible = isElementInViewport(element);
+            // Ajouter ou supprimer la classe 'is-visible' en fonction de la visibilité de l'élément
+            element.classList.toggle("is-visible", isVisible);
+          });
+        };
+        // Définir la fonction isElementInViewport pour vérifier la visibilité de l'élément dans la fenêtre du navigateur
+        const isElementInViewport = (el) => {
+          // Récupérer les dimensions de l'élément
+          const rect = el.getBoundingClientRect();
+          // Récupérer la hauteur de la fenêtre du navigateur
+          const viewportHeight =
+            window.innerHeight || document.documentElement.clientHeight;
+          // Récupérer la largeur de la fenêtre du navigateur
+          const viewportWidth =
+            window.innerWidth || document.documentElement.clientWidth;
+          // Retourner vrai si l'élément est entièrement visible dans la fenêtre du navigateur, sinon retourner faux
+          return (
+            rect.top >= 0 &&
+            rect.left >= 0 &&
+            rect.bottom <= viewportHeight &&
+            rect.right <= viewportWidth
+          );
+        };
+        // Écouter l'événement de défilement de la fenêtre du navigateur et appeler la fonction detectAndAnimate
+        window.addEventListener("scroll", detectAndAnimate);
+        // Appeler la fonction detectAndAnimate une fois au démarrage pour mettre à jour l'état des éléments
+        detectAndAnimate();
+      })();
     </script>
-
-</body>
-
+  </body>
 </html>
